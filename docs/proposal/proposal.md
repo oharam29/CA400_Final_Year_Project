@@ -9,11 +9,11 @@
 
 |                     |                   |
 |---------------------|-------------------|
-|Project Title:       | xxxxxx            |
-|Student 1 Name:      | xxxxxx            |
-|Student 1 ID:        | xxxxxx            |
-|Student 2 Name:      | xxxxxx            |
-|Student 2 ID:        | xxxxxx            |
+|Project Title:       | Mini-mental State Examintaion|
+|Student 1 Name:      | Matthew Nolan     |
+|Student 1 ID:        | 16425716          |
+|Student 2 Name:      | Micheal O'Hara    |
+|Student 2 ID:        | 16414554          |
 |Project Supervisor:  | xxxxxx            |
 
 > Ensure that the Supervisor formally agrees to supervise your project; this is only recognised once the
@@ -34,6 +34,9 @@
 ### Introduction
 
 > Describe the general area covered by the project.
+
+Our project is based off the Mini-mental state examination (MMSE). The MMSE is a 30-point questionaire which is used in clinical and reseach practices the exam is used to measure cognitive impairment in patients, also in medicine to screen for dementia.
+The purpose of the exam is to estimate the severity and progession of cognitive impairment and to follow the course of cognitive changes in a pantient over time. 
 
 ### Outline
 
