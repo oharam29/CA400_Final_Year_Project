@@ -140,6 +140,9 @@ I will mainly work on the backend on the application which will involve implemen
 
 > *Student 2 should complete this section.*
 
+My main area of focus will be to work on the front end of the application making the User Interface. This will include making sure the UI is clean and user friendly.  We also want to make it possible to have the nurse administer the test to the patient or make it so the patient can be given the device and do the test on their own and have the application process the result. The application will have a section for the medical professional can go in and see the previous results. This screen will provide a clear view of results and present the results in a graph or diagram which is easy to understand. I will also work on tests for the backend of the application in order to  avoid code bias and only test parts we know will work. This will involve writing tests to test the database (connecting to, adding/deleting records). It will also involve testing the result processing of the application in order to measure the accuracy of our application.
+
+
 ## Example of the Mini-mental State Exam
 
 
