@@ -140,11 +140,9 @@ I will mainly work on the backend on the application which will involve implemen
 
 > *Student 2 should complete this section.*
 
-## Example
+## Example of the Mini-mental State Exam
 
-> Example: Here's how you can include images in markdown documents...
 
-<!-- Basically, just use HTML! -->
 
 <p align="center">
   <img src="./res/MMSE-printable-mini-mental-state-examination.jpg" width="300px">
