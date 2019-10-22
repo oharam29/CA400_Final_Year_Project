@@ -147,6 +147,6 @@ I will mainly work on the backend on the application which will involve implemen
 <!-- Basically, just use HTML! -->
 
 <p align="center">
-  <img src="./res/cat.png" width="300px">
+  <img src="./res/MMSE-printable-mini-mental-state-examination.jpg" width="300px">
 </p>
 
