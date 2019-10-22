@@ -14,7 +14,7 @@
 |Student 1 ID:        | 16425716          |
 |Student 2 Name:      | Micheal O'Hara    |
 |Student 2 ID:        | 16414554          |
-|Project Supervisor:  | xxxxxx            |
+|Project Supervisor:  | Prof. Gareth Jones            |
 
 > Ensure that the Supervisor formally agrees to supervise your project; this is only recognised once the
 > Supervisor assigns herself/himself via the project Dashboard.
