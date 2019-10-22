@@ -133,6 +133,7 @@ This will allow us to get the project done in a timely manner and to a high stan
 #### Student 1
 
 > *Student 1 should complete this section.*
+I will mainly work on the backend on the application which will involve implementing the core logic of the application along with setting up the database to store results of previous tests and link the results to certain patients. The application will need to store and process results while linking them to the patient that has taken the test. The patient's previous results must also be stored for later retrieval. The application must also be able to graph and predict patients results.We plan to use the medical professionals staff no or a pin code in order to link patients to the staff while also using the code as security locks for the different pages within the application. I will also work on the automated UI testing using selenium to make sure all aspects of the UI function as intended and do not cause any unintended bugs.
 
 #### Student 2
 
