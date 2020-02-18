@@ -1,0 +1,1 @@
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp.UWP\MMSEApp.UWP.csproj;x86

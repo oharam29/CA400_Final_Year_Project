@@ -1,0 +1,13 @@
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.deps.json
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\ref\MMSEApp.dll
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.pdb
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csprojAssemblyReference.cache
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.AssemblyInfoInputs.cache
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.AssemblyInfo.cs
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.dll
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\ref\MMSEApp.dll
+C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.pdb
