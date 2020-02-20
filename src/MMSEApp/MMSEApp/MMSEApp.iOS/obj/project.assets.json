@@ -1024,11 +1024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\MMSEApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\MMSEApp.iOS.csproj",
       "projectName": "MMSEApp.iOS",
-      "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\MMSEApp.iOS.csproj",
+      "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\MMSEApp.iOS.csproj",
       "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1049,8 +1049,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
-              "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
+            "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+              "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
             }
           }
         }

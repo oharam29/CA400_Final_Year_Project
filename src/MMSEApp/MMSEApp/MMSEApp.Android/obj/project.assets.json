@@ -1940,11 +1940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.Android\\MMSEApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.Android\\MMSEApp.Android.csproj",
       "projectName": "MMSEApp.Android",
-      "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.Android\\MMSEApp.Android.csproj",
+      "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.Android\\MMSEApp.Android.csproj",
       "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1965,8 +1965,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
-              "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
+            "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+              "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
             }
           }
         }

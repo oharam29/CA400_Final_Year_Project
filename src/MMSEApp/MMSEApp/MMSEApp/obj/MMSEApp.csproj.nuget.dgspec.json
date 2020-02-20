@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {}
+    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
         "projectName": "MMSEApp",
-        "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
         "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
+        "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

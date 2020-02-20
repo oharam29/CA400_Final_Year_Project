@@ -9376,11 +9376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
       "projectName": "MMSEApp.UWP",
-      "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
+      "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
       "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\obj\\",
+      "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9402,8 +9402,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
-              "projectPath": "C:\\Users\\matth\\source\\repos\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
+            "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+              "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
             }
           }
         }
