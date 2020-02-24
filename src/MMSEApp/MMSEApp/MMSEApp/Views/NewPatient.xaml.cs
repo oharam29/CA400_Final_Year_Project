@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace MMSEApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class NewPatient : ContentPage
     {
-        public LoginPage()
+        public NewPatient()
         {
             InitializeComponent();
-            Logo.Source = ImageSource.FromResource("MMSEApp.Images.logo.jpg");
         }
     }
 }

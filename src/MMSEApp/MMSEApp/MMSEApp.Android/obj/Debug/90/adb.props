@@ -1,2 +1,2 @@
-AdbTarget=
+AdbTarget=-s LCL0218608000364
 AdbOptions=

@@ -18,6 +18,7 @@
 			FontSize="30" 
 			FontAttributes="Bold"  
 			HorizontalOptions="Center" />
+            <Image x:Name="Logo"/>
             <StackLayout Margin="50" Spacing="20">
                 <Button 
 			    Text="Login" 
