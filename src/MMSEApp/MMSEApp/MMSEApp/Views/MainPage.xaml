@@ -5,9 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:view="clr-namespace:MMSEApp.Views"
              mc:Ignorable="d"
-             x:Class="MMSEApp.MainPage">
-    <view:LoginPage Title="Login"/>
+             x:Class="MMSEApp.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+    <view:DashboardPage Title="Dashboard"/>
     <view:PatientsViewPage Title="Patients"/>
-    <view:NewPatient Title="Add Patient"/>
 
 </TabbedPage>

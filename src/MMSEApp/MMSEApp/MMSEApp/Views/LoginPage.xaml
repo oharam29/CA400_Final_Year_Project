@@ -6,7 +6,8 @@
              xmlns:vm="clr-namespace:MMSEApp.ViewModels"
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.LoginPage"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.BindingContext>
         <vm:LoginViewModel/>
     </ContentPage.BindingContext>
@@ -24,12 +25,14 @@
 			    Text="Login" 
 			    TextColor="White"
 			    BackgroundColor="#1dabf0" 
-                    CornerRadius="10"/>
+                CornerRadius="10"
+                Clicked="Login_Button_Clicked"/>
                 <Button 
 			    Text="Register" 
 			    TextColor="White"
 			    BackgroundColor="#1dabf0"
-                CornerRadius="10"/>
+                CornerRadius="10"
+                Clicked="Register_Button_Clicked"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
