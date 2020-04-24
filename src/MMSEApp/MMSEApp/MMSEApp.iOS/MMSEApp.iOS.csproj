@@ -67,6 +67,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\FontAwesome5FreeRegular.otf" />
+    <BundleResource Include="Resources\FontAwesome5FreeSolid.otf" />
+    <BundleResource Include="Resources\FontAwesome5BrandsRegular.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

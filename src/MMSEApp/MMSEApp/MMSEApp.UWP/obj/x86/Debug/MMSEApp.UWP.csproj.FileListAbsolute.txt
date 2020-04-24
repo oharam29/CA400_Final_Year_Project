@@ -103,6 +103,7 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\MainPage.xbf
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\MMSEApp.UWP.csproj.CoreCompileInputs.cache
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\XamlC.stamp
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\MMSEApp.UWP.csproj.CopyComplete
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\Xamarin.Essentials.pri.xml
@@ -126,5 +127,5 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
+C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160679180000000.json
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885310160000000.json

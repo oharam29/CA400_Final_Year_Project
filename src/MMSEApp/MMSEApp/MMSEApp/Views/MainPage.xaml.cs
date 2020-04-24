@@ -15,7 +15,9 @@ namespace MMSEApp
     {
         public MainPage()
         {
+            //this.IconImageSource = ImageSource.FromResource("MMSEApp.Images.home.png");
             InitializeComponent();
+            
         }
     }
 }

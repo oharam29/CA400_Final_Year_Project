@@ -9,7 +9,9 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom">
-    <view:DashboardPage Title="Dashboard"/>
-    <view:PatientsViewPage Title="Patients"/>
 
+    <view:HomePage Title="Home" />
+    <view:PatientsViewPage Title="Patients"/>
+    <view:ExamPage Title="Exam"/>
+    
 </TabbedPage>

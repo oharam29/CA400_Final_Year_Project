@@ -23,9 +23,14 @@ namespace MMSEApp.Views
             await Navigation.PushAsync(new MainPage());
         }
 
-        private void Register_Button_Clicked(object sender, EventArgs e)
+        async void Register_Button_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new RegistrationPage());
+        }
 
+        async void Forgot_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgotPasswordPage());
         }
     }
 }

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MMSEApp.Views.ExamPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="Search for Patients"/>
+            
+            <Label Text="Welcome to Xamarin.Forms!"/>
+
+            <Button
+			    Text="Start Exam" 
+			    TextColor="White"
+			    BackgroundColor="#1dabf0"
+                CornerRadius="10"
+                Clicked="StartExam_Clicked"/>
+          
+            
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal">
+
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
