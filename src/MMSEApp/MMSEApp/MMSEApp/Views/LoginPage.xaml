@@ -14,8 +14,20 @@
     <ContentPage.Content>
         
         <StackLayout VerticalOptions="Center"  Spacing="20">
-            
-            <!--Title-->
+    
+            <!--Style for buttons on this page-->    
+            <StackLayout.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                    <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                    <Setter Property="BackgroundColor" Value="#1976D2" />
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="BackgroundColor" Value="#1dabf0" />
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </StackLayout.Resources>
+                
+             <!--Title-->
             <Label HorizontalTextAlignment="Center"			
             Text="Mini-Mental State Examination"
 			TextColor="#127ac7"
@@ -37,18 +49,12 @@
                 <Button
                 Grid.Row="2"    
 			    Text="Login" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0" 
-                CornerRadius="10"
                 Clicked="Login_Button_Clicked"/>
 
                 <!--RegisterButton-->
                 <Button
                 Grid.Row="3"
 			    Text="Register" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0"
-                CornerRadius="10"
                 Clicked="Register_Button_Clicked"/>
 
 
@@ -56,9 +62,6 @@
                 <Button
                 Grid.Row="4"
 			    Text="Forgot Password" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0"
-                CornerRadius="10"
                 Clicked="Forgot_Button_Clicked"/>
             </Grid>
 

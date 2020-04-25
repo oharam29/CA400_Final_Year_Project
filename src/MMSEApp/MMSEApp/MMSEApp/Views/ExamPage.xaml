@@ -7,9 +7,7 @@
              x:Class="MMSEApp.Views.ExamPage">
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar Placeholder="Search for Patients"/>
-            
-            <Label Text="Welcome to Xamarin.Forms!"/>
+           
 
             <Button
 			    Text="Start Exam" 
@@ -19,18 +17,7 @@
                 Clicked="StartExam_Clicked"/>
           
             
-            <ListView>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell >
-                            <StackLayout Orientation="Horizontal">
 
-
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
 
         </StackLayout>
     </ContentPage.Content>

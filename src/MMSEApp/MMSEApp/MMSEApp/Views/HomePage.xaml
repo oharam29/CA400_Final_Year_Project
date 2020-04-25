@@ -8,6 +8,8 @@
              x:Class="MMSEApp.Views.HomePage">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            
+            <!--Style for buttons on this page-->
             <StackLayout.Resources>
                 <Style TargetType="Button">
                     <Setter Property="VerticalOptions" Value="CenterAndExpand" />
@@ -33,20 +35,16 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
 
-                <Button Grid.Row="0" Grid.Column="1" Text="Doctor profile"/>
+                <Button Grid.Row="0" Grid.Column="0" Text="Doctor profile"/>
 
-                <Button Grid.Row="0" Grid.Column="2" Text="Patients"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Patients"/>
 
-                <Button Grid.Row="1" Grid.Column="1" 
-                        Text="{x:Static fontawesome:FontAwesomeIcons.QuestionCircle}"
-                        FontFamily="{StaticResource FontAwesomeBrands}" />
+                <Button Grid.Row="1" Grid.Column="0" Text="Exams"/>
 
-                <Button Grid.Row="1" Grid.Column="2" Text="Other??"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Calendar"/>
                 
             </Grid>
 
