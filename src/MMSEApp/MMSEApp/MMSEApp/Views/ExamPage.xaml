@@ -6,8 +6,7 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.ExamPage">
     <ContentPage.Content>
-        <StackLayout>
-           
+        <StackLayout x:Name="ExamContent">
 
             <Button
 			    Text="Start Exam" 
@@ -15,8 +14,10 @@
 			    BackgroundColor="#1dabf0"
                 CornerRadius="10"
                 Clicked="StartExam_Clicked"/>
-          
-            
+
+            <Grid x:Name="QuestionsGrid">
+                
+            </Grid>
 
 
         </StackLayout>

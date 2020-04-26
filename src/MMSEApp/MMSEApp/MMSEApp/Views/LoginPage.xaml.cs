@@ -20,6 +20,7 @@ namespace MMSEApp.Views
 
         public void Login_Button_Clicked(object sender, EventArgs e)
         {
+           
             MainPage main = new MainPage();
             Application.Current.MainPage = main;
         }
