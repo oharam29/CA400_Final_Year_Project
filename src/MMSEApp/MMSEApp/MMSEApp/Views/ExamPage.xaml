@@ -13,12 +13,15 @@
 			    TextColor="White"
 			    BackgroundColor="#1dabf0"
                 CornerRadius="10"
-                Clicked="StartExam_Clicked"/>
+                Clicked="OrientationQuestions"
+                x:Name="startButton"/>
 
-            <Grid x:Name="QuestionsGrid">
+            <Label x:Name="SectionTitle" HorizontalOptions="Center"/> 
+ 
+            <Grid x:Name="QuestionsGrid" Padding="20">
                 
             </Grid>
-
+            
 
         </StackLayout>
     </ContentPage.Content>

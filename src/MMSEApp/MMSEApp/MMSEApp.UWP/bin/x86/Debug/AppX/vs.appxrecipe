@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-25T21:51:56.890</Modified>
+      <Modified>2020-04-29T20:11:53.292</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\MMSEApp.UWP.exe">
       <PackagePath>entrypoint\MMSEApp.UWP.exe</PackagePath>
-      <Modified>2020-04-25T21:51:52.068</Modified>
+      <Modified>2020-04-29T20:11:51.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -68,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll">
       <PackagePath>MMSEApp.dll</PackagePath>
-      <Modified>2020-04-26T00:44:00.931</Modified>
+      <Modified>2020-04-30T00:06:09.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -85,169 +85,169 @@
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.740</Modified>
+      <Modified>2020-04-26T01:04:53.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.802</Modified>
+      <Modified>2020-04-26T01:04:53.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.806</Modified>
+      <Modified>2020-04-26T01:04:53.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.808</Modified>
+      <Modified>2020-04-26T01:04:53.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.813</Modified>
+      <Modified>2020-04-26T01:04:53.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.815</Modified>
+      <Modified>2020-04-26T01:04:53.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.881</Modified>
+      <Modified>2020-04-26T01:04:53.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.884</Modified>
+      <Modified>2020-04-26T01:04:53.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.889</Modified>
+      <Modified>2020-04-26T01:04:53.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.890</Modified>
+      <Modified>2020-04-26T01:04:53.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.892</Modified>
+      <Modified>2020-04-26T01:04:53.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.954</Modified>
+      <Modified>2020-04-26T01:04:53.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.955</Modified>
+      <Modified>2020-04-26T01:04:53.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.957</Modified>
+      <Modified>2020-04-26T01:04:53.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.959</Modified>
+      <Modified>2020-04-26T01:04:53.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:27.964</Modified>
+      <Modified>2020-04-26T01:04:53.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.026</Modified>
+      <Modified>2020-04-26T01:04:53.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.028</Modified>
+      <Modified>2020-04-26T01:04:53.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.031</Modified>
+      <Modified>2020-04-26T01:04:53.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.033</Modified>
+      <Modified>2020-04-26T01:04:53.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.038</Modified>
+      <Modified>2020-04-26T01:04:53.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.102</Modified>
+      <Modified>2020-04-26T01:04:53.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.105</Modified>
+      <Modified>2020-04-26T01:04:53.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.106</Modified>
+      <Modified>2020-04-26T01:04:53.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.108</Modified>
+      <Modified>2020-04-26T01:04:53.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.175</Modified>
+      <Modified>2020-04-26T01:04:53.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T16:55:28.179</Modified>
+      <Modified>2020-04-26T01:04:53.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-02-18T16:55:28.183</Modified>
+      <Modified>2020-04-26T01:04:53.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\FontAwesome5FreeRegular.otf">
       <PackagePath>Assets\FontAwesome5FreeRegular.otf</PackagePath>
-      <Modified>2020-04-24T19:35:30.708</Modified>
+      <Modified>2020-04-26T01:04:53.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\FontAwesome5FreeSolid.otf">
       <PackagePath>Assets\FontAwesome5FreeSolid.otf</PackagePath>
-      <Modified>2020-04-24T19:35:30.724</Modified>
+      <Modified>2020-04-26T01:04:53.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\FontAwesome5BrandsRegular.otf">
       <PackagePath>Assets\FontAwesome5BrandsRegular.otf</PackagePath>
-      <Modified>2020-04-24T19:35:30.729</Modified>
+      <Modified>2020-04-26T01:04:53.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\MMSEApp.UWP.xr.xml">
       <PackagePath>MMSEApp.UWP.xr.xml</PackagePath>
-      <Modified>2020-02-18T16:57:10.935</Modified>
+      <Modified>2020-04-26T01:04:53.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-04-25T21:51:51.777</Modified>
+      <Modified>2020-04-29T20:11:51.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-25T21:51:51.777</Modified>
+      <Modified>2020-04-29T20:11:51.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-04-25T21:51:51.778</Modified>
+      <Modified>2020-04-29T20:11:51.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -263,11 +263,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-25T21:51:53.034</Modified>
+      <Modified>2020-04-26T01:13:29.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Core\MMSEApp.UWP.exe">
       <PackagePath>MMSEApp.UWP.exe</PackagePath>
-      <Modified>2020-04-25T21:51:56.872</Modified>
+      <Modified>2020-04-29T20:11:53.285</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

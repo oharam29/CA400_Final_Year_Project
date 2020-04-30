@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\MMSEApp"
   ],
+  "SelectedNode": "\\src\\MMSEApp\\MMSEApp.sln",
   "PreviewInSolutionExplorer": false
 }
