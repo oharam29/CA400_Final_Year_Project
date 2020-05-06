@@ -16,10 +16,10 @@ namespace MMSEApp.Views
         public PatientsViewPage()
         {
             InitializeComponent();
-            PatientsList.ItemsSource = new List<Patient> {
-                new Patient {PatientID = 0, FirstName = "Matt",LastName = "Nolan" },
-                new Patient {PatientID = 1, FirstName = "Mike",LastName = "O'Hara" },
-                new Patient {PatientID = 2, FirstName = "Eoin",LastName = "Clayton" }
+            PatientsList.ItemsSource = new List<PatientItem> {
+                new PatientItem {PatientID = 0, FirstName = "Matt",LastName = "Nolan" },
+                new PatientItem {PatientID = 1, FirstName = "Mike",LastName = "O'Hara" },
+                new PatientItem {PatientID = 2, FirstName = "Eoin",LastName = "Clayton" }
             };
              
         }

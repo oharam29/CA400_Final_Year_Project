@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MMSEApp.Models
 {
-    public class Patient
+    public class PatientItem
     {
         public int PatientID { get; set; }
         public string FirstName { get; set; }

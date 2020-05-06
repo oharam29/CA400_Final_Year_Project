@@ -36,7 +36,7 @@ namespace MMSEApp
                         MenuPages.Add(id, new NavigationPage(new PatientsViewPage()));
                         break;
                     case (int)MenuItemType.Exam:
-                        MenuPages.Add(id, new NavigationPage(new ExamPage()));
+                        MenuPages.Add(id, new NavigationPage(new ExamHomePage()));
                         break;
                 }
             }
