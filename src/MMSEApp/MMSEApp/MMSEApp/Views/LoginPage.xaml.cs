@@ -17,5 +17,22 @@ namespace MMSEApp.Views
             InitializeComponent();
             Logo.Source = ImageSource.FromResource("MMSEApp.Images.logo.jpg");
         }
+
+        public void Login_Button_Clicked(object sender, EventArgs e)
+        {
+           
+            MainPage main = new MainPage();
+            Application.Current.MainPage = main;
+        }
+
+        async void Register_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegistrationPage());
+        }
+
+        async void Forgot_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgotPasswordPage());
+        }
     }
 }

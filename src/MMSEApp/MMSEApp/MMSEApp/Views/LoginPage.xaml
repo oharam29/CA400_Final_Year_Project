@@ -6,31 +6,68 @@
              xmlns:vm="clr-namespace:MMSEApp.ViewModels"
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.LoginPage"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.BindingContext>
         <vm:LoginViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
+        
         <StackLayout VerticalOptions="Center"  Spacing="20">
+    
+            <!--Style for buttons on this page-->    
+            <StackLayout.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                    <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                    <Setter Property="BackgroundColor" Value="#1976D2" />
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="BackgroundColor" Value="#1dabf0" />
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </StackLayout.Resources>
+                
+             <!--Title-->
             <Label HorizontalTextAlignment="Center"			
             Text="Mini-Mental State Examination"
 			TextColor="#127ac7"
 			FontSize="30" 
 			FontAttributes="Bold"  
 			HorizontalOptions="Center" />
+            
+            <!--Logo-->
             <Image x:Name="Logo"/>
-            <StackLayout Margin="50" Spacing="20">
-                <Button 
+
+            <Grid Padding="35" RowSpacing="20">
+                <!--Username-->
+                <Entry x:Name="UserNameVar" Grid.Row="0" Placeholder="Username"/>
+
+                <!--Password-->
+                <Entry Grid.Row="1" Placeholder="Password" IsPassword="True"/>
+
+                <!--LoginButton-->
+                <Button
+                Grid.Row="2"    
 			    Text="Login" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0" 
-                    CornerRadius="10"/>
-                <Button 
+                Clicked="Login_Button_Clicked"/>
+
+                <!--RegisterButton-->
+                <Button
+                Grid.Row="3"
 			    Text="Register" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0"
-                CornerRadius="10"/>
-            </StackLayout>
+                Clicked="Register_Button_Clicked"/>
+
+
+                <!--ForgotPassword, will edit after-->
+                <Button
+                Grid.Row="4"
+			    Text="Forgot Password" 
+                Clicked="Forgot_Button_Clicked"/>
+            </Grid>
+
+           
+                
+        
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
