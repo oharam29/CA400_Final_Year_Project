@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MMSEApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,13 @@ namespace MMSEApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        LoginViewModel loginViewModel;
         public LoginPage()
         {
+            loginViewModel = new LoginViewModel();
             InitializeComponent();
             Logo.Source = ImageSource.FromResource("MMSEApp.Images.logo.jpg");
-        }
-
-        public void Login_Button_Clicked(object sender, EventArgs e)
-        {
-           
-            MainPage main = new MainPage();
-            Application.Current.MainPage = main;
+            BindingContext = loginViewModel;
         }
 
         async void Register_Button_Clicked(object sender, EventArgs e)

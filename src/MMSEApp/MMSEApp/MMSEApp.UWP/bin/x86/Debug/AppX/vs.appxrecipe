@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-11T17:23:47.099</Modified>
+      <Modified>2020-05-11T19:34:18.383</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\MMSEApp.UWP.exe">
       <PackagePath>entrypoint\MMSEApp.UWP.exe</PackagePath>
-      <Modified>2020-05-11T17:23:45.234</Modified>
+      <Modified>2020-05-11T19:34:17.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\.nuget\packages\mysqlconnector\0.66.0\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
@@ -76,7 +76,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll">
       <PackagePath>MMSEApp.dll</PackagePath>
-      <Modified>2020-05-11T17:25:09.230</Modified>
+      <Modified>2020-05-11T19:34:09.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -247,15 +247,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-05-11T17:23:44.995</Modified>
+      <Modified>2020-05-11T19:34:17.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-11T17:23:44.995</Modified>
+      <Modified>2020-05-11T19:34:17.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-11T17:23:44.995</Modified>
+      <Modified>2020-05-11T19:34:17.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -275,7 +275,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\bin\x86\Debug\Core\MMSEApp.UWP.exe">
       <PackagePath>MMSEApp.UWP.exe</PackagePath>
-      <Modified>2020-05-11T17:23:47.090</Modified>
+      <Modified>2020-05-11T19:34:18.375</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
