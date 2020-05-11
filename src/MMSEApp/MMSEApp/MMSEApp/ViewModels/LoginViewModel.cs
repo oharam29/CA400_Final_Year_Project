@@ -46,15 +46,12 @@ namespace MMSEApp.ViewModels
         {
             //null or empty field validation, check weather email and password is null or empty  
             if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
-                App.Current.MainPage.DisplayAlert("Empty Values", "Please enter Email and Password", "OK");
+                App.Current.MainPage.DisplayAlert("Empty Values", "Please enter Username and Password", "OK");
             else
             {
                 LoginResult res = DB_Validate();
                 if (res.LoginSuccess)
                 {
-                    //App.Current.MainPage.DisplayAlert("Login Success", "", "Ok");
-                    
-
                     MainPage main = new MainPage();
                     Application.Current.MainPage = main;
                 }
@@ -107,13 +104,15 @@ namespace MMSEApp.ViewModels
                                 result.msg = "Incorrect Password";
                                 result.LoginSuccess = false;
                             }
+                            break;
                         }
                         else
                         {
                             result.msg = "Incorrect Username";
-                            result.LoginSuccess = false;
+                            result.LoginSuccess = false; 
                         }
                     }
+
                     return result;
                 }
             }
