@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fontawesome="clr-namespace:FontAwesome"
+             mc:Ignorable="d"
+             x:Class="MMSEApp.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            
+            <!--Style for buttons on this page-->
+            <StackLayout.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                    <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                    <Setter Property="BackgroundColor" Value="#1976D2" />
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="BackgroundColor" Value="#1dabf0" />
+                    <Setter Property="CornerRadius" Value="10" />
+                    <Setter Property="WidthRequest" Value="180" />
+                    <Setter Property="HeightRequest" Value="160" />
+                </Style>
+            </StackLayout.Resources>
+
+
+            <Grid RowSpacing="30" ColumnSpacing="20" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Doctor profile"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Patients"/>
+
+                <Button Grid.Row="1" Grid.Column="0" Text="Exams"/>
+
+                <Button Grid.Row="1" Grid.Column="1" Text="Calendar"/>
+                
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
