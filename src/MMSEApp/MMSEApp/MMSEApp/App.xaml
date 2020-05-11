@@ -36,6 +36,13 @@
                 <On Platform="UWP" 
                     Value="/Assets/FontAwesome5Regular.otf#Font Awesome 5 Free" />
             </OnPlatform>
+
+            <Style x:Key="blueButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1976D2" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#1dabf0" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
         </ResourceDictionary>
         
     </Application.Resources>

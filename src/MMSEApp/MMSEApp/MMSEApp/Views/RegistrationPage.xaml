@@ -8,15 +8,6 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Spacing="60" Margin="16" Padding="35">
 
-            <StackLayout.Resources>
-                <Style TargetType="Button">
-                    
-                    <Setter Property="BackgroundColor" Value="#1976D2" />
-                    <Setter Property="TextColor" Value="White" />
-                    <Setter Property="BackgroundColor" Value="#1dabf0" />
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </StackLayout.Resources>
 
             <Label Text="Registration page"  
             HorizontalTextAlignment="Center"			
@@ -29,7 +20,7 @@
                 <Entry Placeholder="Enter Username" Text="{ Binding Username }"/>
                 <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }"/>
                 <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }"/>
-                <Button Text="Submit" Command="{ Binding RegisterCommand }"/>
+                <Button Text="Submit" Command="{ Binding RegisterCommand }" Style="{StaticResource blueButtonStyle}"/>
             </StackLayout>
 
 

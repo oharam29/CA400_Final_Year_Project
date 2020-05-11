@@ -9,13 +9,26 @@
         <ToolbarItem Text="Save"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content >
-        <StackLayout >
-            <Entry Placeholder="First Name"/>
-            <Entry Placeholder="Last Name"/>
-            <DatePicker/>
+        <StackLayout VerticalOptions="Center" Spacing="20">
+
+            <!--Title-->
+            <Label HorizontalTextAlignment="Center"			
+            Text="Add new Patient"
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="CenterAndExpand" />
+            
+            <Entry Placeholder="First Name" Text="{Binding Firstname}"/>
+            <Entry Placeholder="Last Name" Text="{Binding Lastname}"/>
+            <StackLayout >
+                <Label Text="Date of Birth"/>
+                <DatePicker BindingContext="{ Binding Dob }" />
+            </StackLayout>
+            
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-                <Button Text="Save Patient" Clicked="Save_Patient_Button_Clicked"/>
-                <Button Text="Cancel" Clicked="Cancel_Button_Clicked"/>
+                <Button Text="Save Patient" Command="{ Binding AddPatient } " Style="{StaticResource blueButtonStyle}"/>
+                <Button Text="Cancel" Clicked="Cancel_Button_Clicked" Style="{StaticResource blueButtonStyle}"/>
             </StackLayout>
             
 

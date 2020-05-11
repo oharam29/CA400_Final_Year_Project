@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MMSEApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,15 +13,16 @@ namespace MMSEApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewPatient : ContentPage
     {
+
+        NewPatientViewModel newPatientViewModel;
         public NewPatient()
         {
+            newPatientViewModel = new NewPatientViewModel();
+            newPatientViewModel.navigation = Navigation;
             InitializeComponent();
+            BindingContext = newPatientViewModel;
         }
 
-        private void Save_Patient_Button_Clicked(object sender, EventArgs e)
-        {
-
-        }
 
         private async void Cancel_Button_Clicked(object sender, EventArgs e)
         {

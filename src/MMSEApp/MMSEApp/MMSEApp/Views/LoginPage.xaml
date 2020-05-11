@@ -15,15 +15,6 @@
         
         <StackLayout VerticalOptions="Center"  Spacing="20">
     
-            <!--Style for buttons on this page-->    
-            <StackLayout.Resources>
-                <Style TargetType="Button">
-                    <Setter Property="BackgroundColor" Value="#1976D2" />
-                    <Setter Property="TextColor" Value="White" />
-                    <Setter Property="BackgroundColor" Value="#1dabf0" />
-                    <Setter Property="CornerRadius" Value="10" />
-                </Style>
-            </StackLayout.Resources>
                 
              <!--Title-->
             <Label HorizontalTextAlignment="Center"			
@@ -57,12 +48,14 @@
                     <!--LoginButton-->
                     <Button                    
 			        Text="Login" 
-                    Command="{Binding LoginCommand }"/>
+                    Command="{Binding LoginCommand }"
+                    Style="{StaticResource blueButtonStyle}"/>
 
                     <!--RegisterButton-->
                     <Button
 			        Text="Register" 
-                    Clicked="Register_Button_Clicked"/>
+                    Clicked="Register_Button_Clicked"
+                    Style="{StaticResource blueButtonStyle}"/>
 
 
                 </StackLayout>

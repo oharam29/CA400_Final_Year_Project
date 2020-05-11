@@ -5,22 +5,44 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.PatientsViewPage">
-    <StackLayout>
-        <SearchBar Placeholder="Search for Patients"/>
-        <ListView x:Name="PatientsList">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell >
-                        <StackLayout Orientation="Horizontal">
-                            <Label x:Name="PatientID" Text="{Binding PatientID, StringFormat='Patient ID = {0}'}"/>
-                            <Label x:Name="FirstName" Text="{Binding FirstName}" />
-                            <Label x:Name="LastName" Text="{Binding LastName}"/>
-                        
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Add New Patient" Clicked="Add_New_Patient_Button_Clicked"/>
+    <StackLayout Spacing="20">
+        <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            
+            <Grid Grid.Row="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button  Grid.Column="0" Text="New Patient" Clicked="Add_New_Patient_Button_Clicked" Style="{StaticResource blueButtonStyle}"/>
+                <SearchBar  Grid.Column="1" Placeholder="Search for Patients" />
+            
+            </Grid>
+
+            <!-- Patient List -->
+            <ListView Grid.Row="1" x:Name="PatientsList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="PatientID" Text="{Binding PatientID, StringFormat='Patient ID = {0}'}"/>
+                                <Label x:Name="FirstName" Text="{Binding FirstName}" />
+                                <Label x:Name="LastName" Text="{Binding LastName}"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </Grid>
+
     </StackLayout>
 </ContentPage>
