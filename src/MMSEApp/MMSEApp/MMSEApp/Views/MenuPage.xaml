@@ -27,6 +27,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Logout" Clicked="LogoutClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

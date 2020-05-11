@@ -38,5 +38,11 @@ namespace MMSEApp.Views
                
             };
         }
+
+        private void LogoutClicked(object sender, EventArgs e)
+        {
+            LoginPage main = new LoginPage();
+            Application.Current.MainPage = main;
+        }
     }
 }
