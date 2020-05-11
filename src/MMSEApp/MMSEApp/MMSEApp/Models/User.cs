@@ -6,8 +6,8 @@ namespace MMSEApp.Models
 {
     public class User
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public String UserName { get; set; }
+        public String PassWord { get; set; }
         
     }
 }

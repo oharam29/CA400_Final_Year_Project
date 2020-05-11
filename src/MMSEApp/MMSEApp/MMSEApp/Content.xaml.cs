@@ -66,9 +66,11 @@ namespace MMSEApp
                         {
                             while (reader.Read())
                             {
-                                User U = new User();
-                                U.UserName = reader.GetString(0);
-                                U.PassWord = reader.GetString(1);
+                                User U = new User
+                                {
+                                    UserName = reader.GetString(0),
+                                    PassWord = reader.GetString(1)
+                                };
                                 Users.Add(U);
                             }
                         }

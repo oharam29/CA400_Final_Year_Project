@@ -11,7 +11,8 @@ namespace MMSEApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new LoginPage());
+            MainPage = new Content();
         }
 
         protected override void OnStart()
