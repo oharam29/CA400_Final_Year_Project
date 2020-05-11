@@ -6,14 +6,33 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.RegistrationPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Registration page" />
+        <StackLayout VerticalOptions="Center" Spacing="60" Margin="16" Padding="35">
 
-            <Entry Placeholder="Email"/>
-            <Entry Placeholder="Password" IsPassword="True"/>
-            <Entry Placeholder="Confirm Password" IsPassword="True"/>
+            <StackLayout.Resources>
+                <Style TargetType="Button">
+                    
+                    <Setter Property="BackgroundColor" Value="#1976D2" />
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="BackgroundColor" Value="#1dabf0" />
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </StackLayout.Resources>
 
-            <Button Text="Submit"/>
+            <Label Text="Registration page"  
+            HorizontalTextAlignment="Center"			
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Spacing="20">
+                <Entry Placeholder="Enter Username" Text="{ Binding Username }"/>
+                <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }"/>
+                <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }"/>
+                <Button Text="Submit" Command="{ Binding RegisterCommand }"/>
+            </StackLayout>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

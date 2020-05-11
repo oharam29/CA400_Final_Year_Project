@@ -14,7 +14,6 @@ C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMS
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\ExamHomePage.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\ExamPage.xaml.g.cs
-C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\ForgotPasswordPage.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
