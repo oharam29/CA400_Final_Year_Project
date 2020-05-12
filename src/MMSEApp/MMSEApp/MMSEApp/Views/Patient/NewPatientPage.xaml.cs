@@ -28,5 +28,10 @@ namespace MMSEApp.Views
         {
             await Navigation.PopAsync();
         }
+
+        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            newPatientViewModel.Dob = DatePicker.Date;
+        }
     }
 }

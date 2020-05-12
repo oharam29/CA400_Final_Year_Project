@@ -23,7 +23,7 @@
             <Entry Placeholder="Last Name" Text="{Binding Lastname}"/>
             <StackLayout >
                 <Label Text="Date of Birth"/>
-                <DatePicker BindingContext="{ Binding Dob }" />
+                <DatePicker x:Name="DatePicker"  DateSelected="DatePicker_DateSelected" />
             </StackLayout>
             
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal">

@@ -27,21 +27,24 @@
             </Grid>
 
             <!-- Patient List -->
-            <ListView Grid.Row="1" x:Name="PatientsList">
+            <ListView Grid.Row="1" x:Name="PatientsList" SeparatorVisibility="Default">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout Spacing="20" Orientation="Horizontal">
+                                
                                 <Label x:Name="PatientID" Text="{Binding PatientID, StringFormat='Patient ID = {0}'}"/>
                                 <Label x:Name="FirstName" Text="{Binding FirstName}" />
                                 <Label x:Name="LastName" Text="{Binding LastName}"/>
+                                <Label x:Name="DateOfBirth" Text="{ Binding PatientDOB}"/>
+                                <Label x:Name="LastTestDate" Text="{ Binding LastTestDate }"/>
 
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+
         </Grid>
 
     </StackLayout>
