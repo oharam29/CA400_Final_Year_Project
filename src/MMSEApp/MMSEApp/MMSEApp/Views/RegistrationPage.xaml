@@ -20,7 +20,12 @@
                 <Entry Placeholder="Enter Username" Text="{ Binding Username }"/>
                 <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }"/>
                 <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }"/>
-                <Button Text="Submit" Command="{ Binding RegisterCommand }" Style="{StaticResource blueButtonStyle}"/>
+                
+                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Fill">
+                    <Button Text="Submit" Command="{ Binding RegisterCommand }" Style="{StaticResource blueButtonStyle}"/>
+                    <Button Text="Back" Clicked="Button_Clicked" Style="{StaticResource blueButtonStyle}" />
+                </StackLayout>
+                
             </StackLayout>
 
 
