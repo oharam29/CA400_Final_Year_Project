@@ -18,6 +18,7 @@ namespace MMSEApp.Views
         public RegistrationPage()
         {
             registerViewModel = new RegisterViewModel();
+            registerViewModel.navigation = Navigation;
             InitializeComponent();
             BindingContext = registerViewModel;
         }

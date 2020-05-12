@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MMSEApp.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ namespace MMSEApp.ViewModels
 {
     public class RegisterViewModel : INotifyPropertyChanged
     {
+        public INavigation navigation;
         public event PropertyChangedEventHandler PropertyChanged;     
         public RegisterViewModel() { }
 
@@ -67,13 +69,20 @@ namespace MMSEApp.ViewModels
                 }
                 else
                 {
-                    RegisterUser();
+                    DbResult reg = RegisterUser();
+                    App.Current.MainPage.DisplayAlert(reg.msg, "", "OK");
+                    if (reg.success)
+                    {
+                        navigation.PopAsync();
+                    }
+
                 }
             }
         }
 
-        private void RegisterUser()
+        private DbResult RegisterUser()
         {
+            DbResult res = new DbResult();
             string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
             MySqlConnection con = new MySqlConnection(cs);
             try
@@ -86,16 +95,25 @@ namespace MMSEApp.ViewModels
                     cmd.Parameters.AddWithValue("@user", Username);
                     cmd.Parameters.AddWithValue("@pass", Password);
                     cmd.ExecuteNonQuery();
+
+                    res.msg = "User added successfully";
+                    res.success = true;
+
                 }
             }
             catch (MySqlException ex)
             {
+                res.msg = "Error occured, please try again";
+                res.success = false;
+
                 throw (ex);
+
             }
             finally
             {
                 con.Close();
             }
+            return res;
         }
     }
 }

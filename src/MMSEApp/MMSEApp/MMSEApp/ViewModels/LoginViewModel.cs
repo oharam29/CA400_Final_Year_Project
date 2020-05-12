@@ -52,8 +52,8 @@ namespace MMSEApp.ViewModels
             }
             else
             {
-                LoginResult res = DB_Validate();
-                if (res.LoginSuccess)
+                DbResult res = DB_Validate();
+                if (res.success)
                 {
                     MainPage main = new MainPage();
                     Application.Current.MainPage = main;
@@ -63,7 +63,7 @@ namespace MMSEApp.ViewModels
             }
         }
 
-        private LoginResult DB_Validate()
+        private DbResult DB_Validate()
         { 
             List<User> Users = new List<User>();
 
@@ -91,7 +91,7 @@ namespace MMSEApp.ViewModels
                         }
                     }
 
-                    LoginResult result = new LoginResult();
+                    DbResult result = new DbResult();
 
                     foreach (User user in Users)
                     {
@@ -100,19 +100,19 @@ namespace MMSEApp.ViewModels
                             if (user.PassWord == Password)
                             {
                                 result.msg = "Login Success";
-                                result.LoginSuccess = true;
+                                result.success = true;
                             }
                             else
                             {
                                 result.msg = "Incorrect Password";
-                                result.LoginSuccess = false;
+                                result.success = false;
                             }
                             break;
                         }
                         else
                         {
                             result.msg = "Incorrect Username";
-                            result.LoginSuccess = false; 
+                            result.success = false; 
                         }
                     }
 
@@ -128,7 +128,7 @@ namespace MMSEApp.ViewModels
                 con.Close(); // close connection
             }
 
-            return new LoginResult { LoginSuccess = false, msg = "" }; 
+            return new DbResult { success = false, msg = "" }; 
         }
 
     }

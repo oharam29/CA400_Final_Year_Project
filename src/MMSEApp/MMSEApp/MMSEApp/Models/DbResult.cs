@@ -4,10 +4,11 @@ using System.Text;
 
 namespace MMSEApp.Models
 {
-    public class LoginResult
+    public class DbResult
     {
         public string msg;
 
-        public bool LoginSuccess; 
+        public bool success;
+
     }
 }
