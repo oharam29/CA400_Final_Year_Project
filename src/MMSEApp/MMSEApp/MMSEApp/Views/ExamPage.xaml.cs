@@ -7,6 +7,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace MMSEApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

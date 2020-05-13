@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="MMSEApp.Views.Patient.PatientDashboardPage">
+    <ContentPage.Content>
+        <StackLayout >
+
+            <Label Text="Patient Dashboard"  
+            HorizontalTextAlignment="Center"			
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="CenterAndExpand"/>
+            
+            <!-- Body for patient info -->
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="60" Margin="16" Padding="35" >
+                
+                <StackLayout.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="FontSize" Value="20"/>
+                    </Style>
+                </StackLayout.Resources>
+                 
+                
+    
+                    <Grid ColumnSpacing="10">
+                        <Label Grid.Row="0" Grid.Column="0" Text="First Name: " FontAttributes="Bold"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding FirstName}" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="Last Name: " FontAttributes="Bold"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding LastName}"/>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Date of Birth: " FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding PatientDOB}"/>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Last Test Date:" FontAttributes="Bold"/>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding LastTestDate}"/>
+                    </Grid>
+
+                <Label Text="Previous Results" 			
+                       TextColor="#127ac7"
+			            FontSize="22" 
+			            FontAttributes="Bold" />
+                <forms:ChartView x:Name="MyLineChart" HeightRequest="125"/>
+
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -27,7 +27,7 @@
             </Grid>
 
             <!-- Patient List -->
-            <ListView Grid.Row="1" x:Name="PatientsList" SeparatorVisibility="Default">
+            <ListView Grid.Row="1" x:Name="PatientsList" SeparatorVisibility="Default" ItemSelected="PatientsList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >

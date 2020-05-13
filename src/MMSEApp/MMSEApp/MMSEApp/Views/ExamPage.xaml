@@ -6,9 +6,13 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.ExamPage">
     <ContentPage.Content>
-        <StackLayout x:Name="ExamContent">
 
+
+        <StackLayout x:Name="ExamContent">
+           
+            
             <Button
+                
 			    Text="Start Exam" 
 			    TextColor="White"
 			    BackgroundColor="#1dabf0"

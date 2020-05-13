@@ -90,11 +90,11 @@ namespace MMSEApp.ViewModels
 
                 if (con.State == ConnectionState.Closed)
                 {
-                    con.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con);
-                    cmd.Parameters.AddWithValue("@user", Username);
+                    con.Open(); // open connection 
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
+                    cmd.Parameters.AddWithValue("@user", Username); // add parameters
                     cmd.Parameters.AddWithValue("@pass", Password);
-                    cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery(); // execute the query
 
                     res.msg = "User added successfully";
                     res.success = true;
@@ -111,7 +111,7 @@ namespace MMSEApp.ViewModels
             }
             finally
             {
-                con.Close();
+                con.Close(); // close connection 
             }
             return res;
         }

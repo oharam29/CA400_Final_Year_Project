@@ -1,4 +1,5 @@
 ﻿using MMSEApp.Models;
+using MMSEApp.Views.Patient;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -51,7 +52,7 @@ namespace MMSEApp.Views
                                         LastName = reader.GetString(1),
                                         FirstName = reader.GetString(2),
                                         LastTestDate = reader.GetDateTime(3),
-                                        PatientDOB = reader.GetDateTime(4)
+                                        PatientDOB = reader.GetDateTime(4).Date
                                     });
                             }
                         }
@@ -69,6 +70,10 @@ namespace MMSEApp.Views
             return patients;
         }
 
+        async void PatientsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new PatientDashboardPage(e.SelectedItem as PatientItem));
+        }
     }
 }
     

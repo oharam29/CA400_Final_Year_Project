@@ -66,44 +66,41 @@ namespace MMSEApp.ViewModels
         private DbResult DB_Validate()
         { 
             List<User> Users = new List<User>();
-
             string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
             MySqlConnection con = new MySqlConnection(cs);
             try
             {
                 if (con.State == ConnectionState.Closed)
                 {
-                    con.Open();
-                    string query = "SELECT UserName, PassWord FROM TBL_USER";
+                    con.Open(); // open db connection
+                    string query = "SELECT UserName, PassWord FROM TBL_USER"; // sql query string
                     using (MySqlCommand command = new MySqlCommand(query, con))
                     {
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read())
+                            while (reader.Read()) // read in query results
                             {
-                                User U = new User
+                                User U = new User 
                                 {
-                                    UserName = reader.GetString(0),
+                                    UserName = reader.GetString(0), // get the corresponding values 
                                     PassWord = reader.GetString(1)
                                 };
-                                Users.Add(U);
+                                Users.Add(U); // make a list of all users 
                             }
                         }
                     }
-
-                    DbResult result = new DbResult();
-
-                    foreach (User user in Users)
+                    DbResult result = new DbResult(); 
+                    foreach (User user in Users) // iterate through the list of users to find desired user
                     {
                         if (user.UserName == Username)
                         {
                             if (user.PassWord == Password)
                             {
-                                result.msg = "Login Success";
+                                result.msg = "Login Success"; // if username and password are correct log user in 
                                 result.success = true;
                             }
-                            else
-                            {
+                            else // else do not log user in 
+                            { 
                                 result.msg = "Incorrect Password";
                                 result.success = false;
                             }
@@ -115,8 +112,7 @@ namespace MMSEApp.ViewModels
                             result.success = false; 
                         }
                     }
-
-                    return result;
+                    return result; 
                 }
             }
             catch (MySqlException ex)
