@@ -38,10 +38,10 @@
                 
                 <StackLayout Grid.Row="1">
                     <!--Username-->
-                    <Entry x:Name="UserNameVar" Grid.Row="0" Placeholder="Username" Text="{ Binding Username }"/>
+                    <Entry x:Name="UserNameVar" Grid.Row="0" Placeholder="Username" Text="{ Binding Username }" AutomationId="LP_Username"/>
 
                     <!--Password-->
-                    <Entry  x:Name="PasswordVar" Placeholder="Password" IsPassword="True" Text="{ Binding Password }"/>
+                    <Entry  x:Name="PasswordVar" Placeholder="Password" IsPassword="True" Text="{ Binding Password }" AutomationId="LP_Password"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" HorizontalOptions="FillAndExpand" >
@@ -49,13 +49,15 @@
                     <Button                    
 			        Text="Login" 
                     Command="{Binding LoginCommand }"
-                    Style="{StaticResource blueButtonStyle}"/>
+                    Style="{StaticResource blueButtonStyle}"
+                        AutomationId="LP_Login"/>
 
                     <!--RegisterButton-->
                     <Button
 			        Text="Register" 
                     Clicked="Register_Button_Clicked"
-                    Style="{StaticResource blueButtonStyle}"/>
+                    Style="{StaticResource blueButtonStyle}"
+                        AutomationId="LP_Register"/>
 
 
                 </StackLayout>

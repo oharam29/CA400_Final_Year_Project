@@ -17,13 +17,13 @@
 			HorizontalOptions="CenterAndExpand"/>
 
             <StackLayout Spacing="20">
-                <Entry Placeholder="Enter Username" Text="{ Binding Username }"/>
-                <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }"/>
-                <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }"/>
+                <Entry Placeholder="Enter Username" Text="{ Binding Username }" AutomationId="RP_Username"/>
+                <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }" AutomationId="RP_Password"/>
+                <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }" AutomationId="RP_Password_Con"/>
                 
                 <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Fill">
-                    <Button Text="Submit" Command="{ Binding RegisterCommand }" Style="{StaticResource blueButtonStyle}"/>
-                    <Button Text="Back" Clicked="Button_Clicked" Style="{StaticResource blueButtonStyle}" />
+                    <Button Text="Submit" Command="{ Binding RegisterCommand }" Style="{StaticResource blueButtonStyle}" AutomationId="RP_Submit"/>
+                    <Button Text="Back" Clicked="Button_Clicked" Style="{StaticResource blueButtonStyle}" AutomationId="RP_Back"/>
                 </StackLayout>
                 
             </StackLayout>

@@ -21,8 +21,8 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button  Grid.Column="0" Text="New Patient" Clicked="Add_New_Patient_Button_Clicked" Style="{StaticResource blueButtonStyle}"/>
-                <SearchBar  Grid.Column="1" Placeholder="Search for Patients" />
+                <Button  Grid.Column="0" Text="New Patient" Clicked="Add_New_Patient_Button_Clicked" Style="{StaticResource blueButtonStyle}" AutomationId="RP_New"/>
+                <SearchBar  Grid.Column="1" Placeholder="Search for Patients" AutomationId="PV_Search"/>
             
             </Grid>
 
