@@ -13,6 +13,17 @@ namespace MMSEApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public LoginViewModel() { }
+        
+        private int userId;
+        public int UserID
+        {
+            get { return userId; }
+            set
+            {
+                userId = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("UserID"));
+            }
+        }
 
         private string username;
         public string Username
@@ -57,6 +68,13 @@ namespace MMSEApp.ViewModels
                 {
                     MainPage main = new MainPage();
                     Application.Current.MainPage = main;
+                    App.currentUser = new User
+                    {
+                        UserId = UserID,
+                        UserName = Username,
+                        PassWord = Password
+
+                    };
                 }
                 else
                     App.Current.MainPage.DisplayAlert("Login Fail", res.msg, "OK");
@@ -73,7 +91,7 @@ namespace MMSEApp.ViewModels
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open(); // open db connection
-                    string query = "SELECT UserName, PassWord FROM TBL_USER"; // sql query string
+                    string query = "SELECT UserID, UserName, PassWord FROM TBL_USER"; // sql query string
                     using (MySqlCommand command = new MySqlCommand(query, con))
                     {
                         using (MySqlDataReader reader = command.ExecuteReader())
@@ -82,8 +100,9 @@ namespace MMSEApp.ViewModels
                             {
                                 User U = new User 
                                 {
-                                    UserName = reader.GetString(0), // get the corresponding values 
-                                    PassWord = reader.GetString(1)
+                                    UserId = reader.GetInt32(0),
+                                    UserName = reader.GetString(1), // get the corresponding values 
+                                    PassWord = reader.GetString(2)
                                 };
                                 Users.Add(U); // make a list of all users 
                             }
@@ -96,6 +115,7 @@ namespace MMSEApp.ViewModels
                         {
                             if (user.PassWord == Password)
                             {
+                                UserID = user.UserId;
                                 result.msg = "Login Success"; // if username and password are correct log user in 
                                 result.success = true;
                             }

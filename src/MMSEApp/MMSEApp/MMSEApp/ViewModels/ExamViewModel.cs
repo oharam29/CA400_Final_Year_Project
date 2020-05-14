@@ -1,6 +1,9 @@
-﻿using System;
+﻿using MMSEApp.Models;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Text;
 using Xamarin.Forms;
 
@@ -273,6 +276,42 @@ namespace MMSEApp.ViewModels
             }
         }
         #endregion
+
+        private DbResult SaveExamResult()
+        {
+            DbResult res = new DbResult();
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            MySqlConnection con = new MySqlConnection(cs);
+            try
+            {
+
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open(); // open connection 
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
+                    //cmd.Parameters.AddWithValue("@user", Username); // add parameters
+                    //cmd.Parameters.AddWithValue("@pass", Password);
+                    cmd.ExecuteNonQuery(); // execute the query
+
+                    res.msg = "User added successfully";
+                    res.success = true;
+
+                }
+            }
+            catch (MySqlException ex)
+            {
+                res.msg = "Error occured, please try again";
+                res.success = false;
+
+                throw (ex);
+
+            }
+            finally
+            {
+                con.Close(); // close connection 
+            }
+            return res;
+        }
 
     }
 }
