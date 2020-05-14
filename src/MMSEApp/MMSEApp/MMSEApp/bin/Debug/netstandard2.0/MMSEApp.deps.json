@@ -14,10 +14,12 @@
           "MySqlConnector": "0.66.0",
           "NETStandard.Library": "2.0.3",
           "NUnit": "3.12.0",
+          "NUnit3TestAdapter": "3.16.1",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "runtime": {
           "MMSEApp.dll": {}
@@ -87,6 +89,7 @@
           }
         }
       },
+      "NUnit3TestAdapter/3.16.1": {},
       "SkiaSharp/1.59.1": {
         "runtime": {
           "lib/netstandard1.3/SkiaSharp.dll": {
@@ -120,6 +123,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
         }
       },
       "System.Memory/4.5.0": {
@@ -205,11 +216,11 @@
           }
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "runtime": {
-          "lib/net45/Xamarin.UITest.dll": {
-            "assemblyVersion": "3.0.7.0",
-            "fileVersion": "3.0.7.0"
+          "lib/Xamarin.UITest.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
           }
         }
       }
@@ -277,6 +288,13 @@
       "path": "nunit/3.12.0",
       "hashPath": "nunit.3.12.0.nupkg.sha512"
     },
+    "NUnit3TestAdapter/3.16.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wKuxi7G9Gs2I9gnckwtMVzbPIy7vkNj+FafrmQPaYCUguT+se5kmzI3XwsVCXEalWk9pSYZW7roBkNu4ogn3DA==",
+      "path": "nunit3testadapter/3.16.1",
+      "hashPath": "nunit3testadapter.3.16.1.nupkg.sha512"
+    },
     "SkiaSharp/1.59.1": {
       "type": "package",
       "serviceable": true,
@@ -304,6 +322,13 @@
       "sha512": "sha512-3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "path": "system.collections/4.3.0",
       "hashPath": "system.collections.4.3.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
     },
     "System.Memory/4.5.0": {
       "type": "package",
@@ -368,12 +393,12 @@
       "path": "xamarin.forms/4.4.0.991640",
       "hashPath": "xamarin.forms.4.4.0.991640.nupkg.sha512"
     },
-    "Xamarin.UITest/3.0.7": {
+    "Xamarin.UITest/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ap8XMH/SyWxsQrIM6CC9wDgwjCavFMDqoJDRNlBCm7LvJxqJ1PZLXzyVaDjSyOTda7R1B28ASbHC2GUTLz4H0g==",
-      "path": "xamarin.uitest/3.0.7",
-      "hashPath": "xamarin.uitest.3.0.7.nupkg.sha512"
+      "sha512": "sha512-emBQms5xeyo3LAQbslGrppku3F749/eZMRRQHbUGpbXRAEo8up92IR3bt/wc1QT2VjzimjWac2Cgd7t8lOjJhg==",
+      "path": "xamarin.uitest/1.1.1",
+      "hashPath": "xamarin.uitest.1.1.1.nupkg.sha512"
     }
   }
 }

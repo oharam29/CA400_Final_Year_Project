@@ -479,6 +479,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -589,13 +598,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -607,9 +616,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -1231,6 +1241,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -1330,13 +1349,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -1348,9 +1367,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -1973,6 +1993,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -2072,13 +2101,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -2090,9 +2119,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -2710,6 +2740,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -2806,13 +2845,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -2824,9 +2863,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -3448,6 +3488,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -3547,13 +3596,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -3565,9 +3614,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -4190,6 +4240,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -4289,13 +4348,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -4307,9 +4366,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -4931,6 +4991,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -5030,13 +5099,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -5048,9 +5117,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -5673,6 +5743,15 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Memory/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -5772,13 +5851,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.UITest/3.0.7": {
+      "Xamarin.UITest/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+          "lib/Xamarin.UITest.dll": {}
         }
       },
       "MMSEApp/1.0.0": {
@@ -5790,9 +5869,10 @@
           "MySqlConnector": "0.66.0",
           "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "3.0.7"
+          "Xamarin.UITest": "1.1.1"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -10485,6 +10565,45 @@
         "version.txt"
       ]
     },
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "type": "package",
+      "path": "system.drawing.common/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Memory/4.5.0": {
       "sha512": "m0psCSpUxTGfvwyO0i03ajXVhgBqyXlibXz0Mo1dtKGjaHrXFLnuQ8rNBTmWRqbfRjr4eC6Wah4X5FfuFDu5og==",
       "type": "package",
@@ -10981,22 +11100,19 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.UITest/3.0.7": {
-      "sha512": "ap8XMH/SyWxsQrIM6CC9wDgwjCavFMDqoJDRNlBCm7LvJxqJ1PZLXzyVaDjSyOTda7R1B28ASbHC2GUTLz4H0g==",
+    "Xamarin.UITest/1.1.1": {
+      "sha512": "emBQms5xeyo3LAQbslGrppku3F749/eZMRRQHbUGpbXRAEo8up92IR3bt/wc1QT2VjzimjWac2Cgd7t8lOjJhg==",
       "type": "package",
-      "path": "xamarin.uitest/3.0.7",
+      "path": "xamarin.uitest/1.1.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.md",
-        "ThirdPartyNotices.txt",
-        "lib/net45/Xamarin.UITest.dll",
-        "lib/net45/Xamarin.UITest.xml",
-        "lib/portable-net45+win8+wp8/Xamarin.UITest.dll",
-        "lib/portable-net45+win8+wp8/Xamarin.UITest.xml",
+        "Xamarin.UITest-License.rtf",
+        "lib/Xamarin.UITest.dll",
+        "lib/Xamarin.UITest.xml",
         "tools/test-cloud.exe",
-        "xamarin.uitest.3.0.7.nupkg.sha512",
+        "xamarin.uitest.1.1.1.nupkg.sha512",
         "xamarin.uitest.nuspec"
       ]
     },
@@ -11121,5 +11237,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xamarin.UITest 1.1.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework 'UAP,Version=v10.0.16299'. This package may not be fully compatible with your project.",
+      "libraryId": "Xamarin.UITest",
+      "targetGraphs": [
+        "UAP,Version=v10.0.16299"
+      ]
+    }
+  ]
 }

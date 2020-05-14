@@ -43,6 +43,9 @@
     <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\nunit\3.12.0\lib\netstandard2.0\nunit.framework.dll">
+      <PackagePath>nunit.framework.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
@@ -64,6 +67,9 @@
     <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\skiasharp.views.forms\1.59.1.1\lib\uap10.0\SkiaSharp.Views.Forms.dll">
       <PackagePath>SkiaSharp.Views.Forms.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\system.drawing.common\4.7.0\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
@@ -82,6 +88,9 @@
     <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\xamarin.forms\4.4.0.991640\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\xamarin.uitest\1.1.1\lib\Xamarin.UITest.dll">
+      <PackagePath>Xamarin.UITest.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll">
       <PackagePath>MMSEApp.dll</PackagePath>
     </AppxPackagedFile>
@@ -93,6 +102,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\xamarin.forms\4.4.0.991640\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\nunit3testadapter\3.16.1\build\net35\NUnit3.TestAdapter.dll">
+      <PackagePath>NUnit3.TestAdapter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\nunit3testadapter\3.16.1\build\net35\nunit.engine.dll">
+      <PackagePath>nunit.engine.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nova6\.nuget\packages\nunit3testadapter\3.16.1\build\net35\nunit.engine.api.dll">
+      <PackagePath>nunit.engine.api.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
