@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MMSEApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,12 @@ namespace MMSEApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExamPage : ContentPage
     {
-        
+        ExamViewModel examViewModel;
         public ExamPage()
         {
+            examViewModel = new ExamViewModel();
             InitializeComponent();
+            BindingContext = examViewModel;
         }
 
         private void ClearGrid() 
@@ -24,11 +27,12 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Clear(); // emptys grid
         }
 
-        private void AddQuestionEntry(int QColumn, int QRow, int AColumn, int ARow, string question) 
+        private void AddQuestionEntry(int QColumn, int QRow, int AColumn, int ARow, string question, string binding="") 
         {
             var Question = new Label { Text = question }; // makes a new label with the question set as its text
             var Answer = new Entry(); // adds a new entry for answer
-
+            Answer.SetBinding(Entry.TextProperty, new Binding(binding));
+            
             QuestionsGrid.Children.Add(Question, QColumn, QRow); // add question to row
             QuestionsGrid.Children.Add(Answer, AColumn, ARow); // add answer to row
         }
@@ -44,11 +48,12 @@ namespace MMSEApp.Views
             SectionTitle.Text = "Orientation";
 
             // add first set of questions
-            AddQuestionEntry(0, 0, 1, 0, "What year is it?");
-            AddQuestionEntry(0, 1, 1, 1, "What month is it?");
-            AddQuestionEntry(0, 2, 1, 2, "What day is it?");
-            AddQuestionEntry(0, 3, 1, 3, "What time is it?");
-            AddQuestionEntry(0, 4, 1, 4, "What year is it?");
+
+            AddQuestionEntry(0, 0, 1, 0, "What year is it?", "OrientationAns1");
+            AddQuestionEntry(0, 1, 1, 1, "What month is it?", "OrientationAns2");
+            AddQuestionEntry(0, 2, 1, 2, "What day is it?", "OrientationAns3");
+            AddQuestionEntry(0, 3, 1, 3, "What time is it?", "OrientationAns4");
+            AddQuestionEntry(0, 4, 1, 4, "What year is it?", "OrientationAns5");
 
             // add the next 
             var nextButton = new Button { Text = "Next" };
@@ -65,11 +70,11 @@ namespace MMSEApp.Views
             SectionTitle.Text = "Orientation";
 
             // add first set of questions
-            AddQuestionEntry(0, 0, 1, 0, "What Country are we in?");
-            AddQuestionEntry(0, 1, 1, 1, "What Town are we in?");
-            AddQuestionEntry(0, 2, 1, 2, "What District are we in?");
-            AddQuestionEntry(0, 3, 1, 3, "What Hospital are we in?");
-            AddQuestionEntry(0, 4, 1, 4, "What ward are we in?");
+            AddQuestionEntry(0, 0, 1, 0, "What Country are we in?", "OrientationAns6");
+            AddQuestionEntry(0, 1, 1, 1, "What Town are we in?", "OrientationAns7");
+            AddQuestionEntry(0, 2, 1, 2, "What District are we in?", "OrientationAns8");
+            AddQuestionEntry(0, 3, 1, 3, "What Hospital are we in?", "OrientationAns9");
+            AddQuestionEntry(0, 4, 1, 4, "What ward are we in?", "OrientationAns10");
 
             var backButton = new Button { Text = "Back" };
             backButton.Clicked += new EventHandler(OrientationQuestions);
@@ -86,9 +91,9 @@ namespace MMSEApp.Views
 
             SectionTitle.Text = "Registration";
             // add second set of questions
-            AddQuestionEntry(0, 0, 1, 0, "This is a chair");
-            AddQuestionEntry(0, 1, 1, 1, "This is a car");
-            AddQuestionEntry(0, 2, 1, 2, "This is a house");
+            AddQuestionEntry(0, 0, 1, 0, "This is a chair", "RegistrationAns1");
+            AddQuestionEntry(0, 1, 1, 1, "This is a car", "RegistrationAns2");
+            AddQuestionEntry(0, 2, 1, 2, "This is a house", "RegistrationAns3");
 
             // back button 
             var backButton = new Button { Text = "Back" };
@@ -106,11 +111,8 @@ namespace MMSEApp.Views
             ClearGrid();
 
             SectionTitle.Text = "Attention and Calculation";
-            AddQuestionEntry(0, 0, 1, 0, "Subtract 7 from 100, Repeat 5 times");
-            for(int i = 1; i < 5; i++)
-            {
-                QuestionsGrid.Children.Add( new Entry(),1,i);
-            }
+            AddQuestionEntry(0, 0, 1, 0, "Subtract 7 from 100, Repeat 5 times", "AttenCalcAns1");
+            
 
             var backButton = new Button { Text = "Back" };
             backButton.Clicked += new EventHandler(RegistrationQuesitons);
@@ -128,11 +130,9 @@ namespace MMSEApp.Views
             ClearGrid();
 
             SectionTitle.Text = "Recall";
-            AddQuestionEntry(0, 0, 1, 0, "Can you name the 3 objects u learned in section 2");
-            for (int i = 1; i < 3; i++)
-            {
-                QuestionsGrid.Children.Add(new Entry(), 1, i);
-            }
+            AddQuestionEntry(0, 0, 1, 0, "Can you name the 3 objects u learned in section 2? ", "RecallAns1");
+            AddQuestionEntry(0, 1, 1, 1, "", "RecallAns2");
+            AddQuestionEntry(0, 2, 1, 2, "", "RecallAns3");
 
             var backButton = new Button { Text = "Back" };
             backButton.Clicked += new EventHandler(AttentionCalulationQuestions);
@@ -148,11 +148,11 @@ namespace MMSEApp.Views
         {
             ClearGrid();
             SectionTitle.Text = "Language";
-            AddQuestionEntry(0, 0, 1, 0, "Name a pencil and watch");
-            AddQuestionEntry(0, 1, 1, 1, "Repeat \"No ifs,ands,or buts\" ");
-            AddQuestionEntry(0, 2, 1, 2, "3 stage command ");
-            AddQuestionEntry(0, 3, 1, 3, "Read a piece of paper ");
-            AddQuestionEntry(0, 4, 1, 4, "write a sentence ");
+            AddQuestionEntry(0, 0, 1, 0, "Name a pencil and watch", "LanguageAns1");
+            AddQuestionEntry(0, 1, 1, 1, "Repeat \"No ifs,ands,or buts\" ", "LanguageAns2");
+            AddQuestionEntry(0, 2, 1, 2, "3 stage command ", "LanguageAns3");
+            AddQuestionEntry(0, 3, 1, 3, "Read a piece of paper ", "LanguageAns4");
+            AddQuestionEntry(0, 4, 1, 4, "write a sentence ", "LanguageAns5");
 
             var backButton = new Button { Text = "Back" };
             backButton.Clicked += new EventHandler(RecallQuestions);
