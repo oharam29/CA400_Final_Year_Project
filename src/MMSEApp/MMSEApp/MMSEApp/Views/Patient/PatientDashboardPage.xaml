@@ -46,8 +46,8 @@
 
 
             </StackLayout>
-            <Button Text="Delete Patient Data" Clicked="Delete_Patient" BackgroundColor="Red" />
-            <Button Text="Back" Clicked="Go_Back" />
+            <Button Text="Delete Patient Data" Clicked="Delete_Patient" BackgroundColor="Red" AutomationId="PD_Delete_Button"/>
+            <Button Text="Back" Clicked="Go_Back" AutomationId="PD_Back_Button"/>
 
         </StackLayout>
     </ContentPage.Content>

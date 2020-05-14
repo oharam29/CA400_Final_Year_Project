@@ -281,6 +281,21 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -574,6 +589,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -581,9 +605,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -872,6 +898,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -1289,6 +1330,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1296,9 +1346,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -1587,6 +1639,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {
@@ -2005,6 +2072,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2012,9 +2088,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -2303,6 +2381,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -2713,6 +2806,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2720,9 +2822,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -3011,6 +3115,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -3428,6 +3547,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3435,9 +3563,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -3726,6 +3856,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -4144,6 +4289,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4151,9 +4305,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -4442,6 +4598,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -4859,6 +5030,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4866,9 +5046,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -5157,6 +5339,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -5575,6 +5772,15 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.UITest/3.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8/Xamarin.UITest.dll": {}
+        }
+      },
       "MMSEApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5582,9 +5788,11 @@
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
           "MySqlConnector": "0.66.0",
+          "NUnit": "3.12.0",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.UITest": "3.0.7"
         },
         "compile": {
           "bin/placeholder/MMSEApp.dll": {}
@@ -6224,6 +6432,36 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "NUnit/3.12.0": {
+      "sha512": "3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
+      "type": "package",
+      "path": "nunit/3.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "build/NUnit.props",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.pdb",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.pdb",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.pdb",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard1.4/nunit.framework.dll",
+        "lib/netstandard1.4/nunit.framework.pdb",
+        "lib/netstandard1.4/nunit.framework.xml",
+        "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.pdb",
+        "lib/netstandard2.0/nunit.framework.xml",
+        "nunit.3.12.0.nupkg.sha512",
+        "nunit.nuspec"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {
@@ -10741,6 +10979,25 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
         "xamarin.forms.4.4.0.991640.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.UITest/3.0.7": {
+      "sha512": "ap8XMH/SyWxsQrIM6CC9wDgwjCavFMDqoJDRNlBCm7LvJxqJ1PZLXzyVaDjSyOTda7R1B28ASbHC2GUTLz4H0g==",
+      "type": "package",
+      "path": "xamarin.uitest/3.0.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "ThirdPartyNotices.txt",
+        "lib/net45/Xamarin.UITest.dll",
+        "lib/net45/Xamarin.UITest.xml",
+        "lib/portable-net45+win8+wp8/Xamarin.UITest.dll",
+        "lib/portable-net45+win8+wp8/Xamarin.UITest.xml",
+        "tools/test-cloud.exe",
+        "xamarin.uitest.3.0.7.nupkg.sha512",
+        "xamarin.uitest.nuspec"
       ]
     },
     "MMSEApp/1.0.0": {
