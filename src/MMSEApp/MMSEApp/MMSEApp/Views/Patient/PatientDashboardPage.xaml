@@ -46,6 +46,8 @@
 
 
             </StackLayout>
+            <Button Text="Delete Patient Data" Clicked="Delete_Patient" BackgroundColor="Red" />
+            <Button Text="Back" Clicked="Go_Back" />
 
         </StackLayout>
     </ContentPage.Content>
