@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj": {}
+    "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj": {
+    "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
         "projectName": "MMSEApp.UWP",
-        "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
-        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\obj\\",
+        "projectPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\MMSEApp.UWP.csproj",
+        "packagesPath": "C:\\Users\\Nova6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nova6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
-                "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
+              "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+                "projectPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj"
               }
             }
           }
@@ -103,20 +103,20 @@
         }
       }
     },
-    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+    "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "projectUniqueName": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
         "projectName": "MMSEApp",
-        "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
-        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
+        "projectPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "packagesPath": "C:\\Users\\Nova6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nova6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -149,6 +149,10 @@
               "target": "Package",
               "version": "[0.7.1, )"
             },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.10, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[0.66.0, )"
@@ -179,15 +183,15 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.4.0.991640, )"
+              "version": "[4.6.0.726, )"
             },
             "Xamarin.UITest": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[3.0.7, )"
             }
           },
           "imports": [
@@ -200,7 +204,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,15 +11,16 @@
         "dependencies": {
           "Microcharts": "0.7.1",
           "Microcharts.Forms": "0.7.1",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
           "MySqlConnector": "0.66.0",
           "NETStandard.Library": "2.0.3",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
           "Newtonsoft.Json": "12.0.3",
           "System.Drawing.Common": "4.7.0",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640",
-          "Xamarin.UITest": "1.1.1"
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.6.0.726",
+          "Xamarin.UITest": "3.0.7"
         },
         "runtime": {
           "MMSEApp.dll": {}
@@ -41,7 +42,7 @@
         "dependencies": {
           "SkiaSharp.Views.Forms": "1.59.1.1",
           "System.ValueTuple": "4.4.0",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.6.0.726"
         },
         "runtime": {
           "lib/netstandard1.4/Microcharts.Forms.dll": {
@@ -52,6 +53,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {},
       "MySqlConnector/0.66.0": {
         "dependencies": {
           "System.Buffers": "4.4.0",
@@ -101,7 +103,7 @@
       "SkiaSharp.Views.Forms/1.59.1.1": {
         "dependencies": {
           "SkiaSharp": "1.59.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.6.0.726"
         },
         "runtime": {
           "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
@@ -189,7 +191,7 @@
         }
       },
       "System.ValueTuple/4.4.0": {},
-      "Xamarin.Essentials/1.3.1": {
+      "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -200,27 +202,27 @@
           }
         }
       },
-      "Xamarin.Forms/4.4.0.991640": {
+      "Xamarin.Forms/4.6.0.726": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.4.0.471"
+            "fileVersion": "4.6.0.446"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.4.0.471"
+            "fileVersion": "4.6.0.446"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.4.0.471"
+            "fileVersion": "4.6.0.446"
           }
         }
       },
-      "Xamarin.UITest/1.1.1": {
+      "Xamarin.UITest/3.0.7": {
         "runtime": {
-          "lib/Xamarin.UITest.dll": {
-            "assemblyVersion": "1.1.1.0",
-            "fileVersion": "1.1.1.0"
+          "lib/net45/Xamarin.UITest.dll": {
+            "assemblyVersion": "3.0.7.0",
+            "fileVersion": "3.0.7.0"
           }
         }
       }
@@ -259,6 +261,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ROxFw/6HrgkUQKna0NAPWfmnuHpp/5JFB+lvTG47ELXiYjYpBfEKCGXax8kh/KKzP6uLDn4M3zJUUXC6Bst1+Q==",
+      "path": "microsoft.netcore.universalwindowsplatform/6.2.10",
+      "hashPath": "microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512"
     },
     "MySqlConnector/0.66.0": {
       "type": "package",
@@ -379,26 +388,26 @@
       "path": "system.valuetuple/4.4.0",
       "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.3.1": {
+    "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
-      "path": "xamarin.essentials/1.3.1",
-      "hashPath": "xamarin.essentials.1.3.1.nupkg.sha512"
+      "sha512": "sha512-BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+      "path": "xamarin.essentials/1.5.3.2",
+      "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.4.0.991640": {
+    "Xamarin.Forms/4.6.0.726": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-668BMe9e5uvQW+caDebKn3nZr1Msxc4YMpDhD/dN061h+bHYEoWu1c/gdmQnwhGpeHMP4TClPxCKRP41FFsGCQ==",
-      "path": "xamarin.forms/4.4.0.991640",
-      "hashPath": "xamarin.forms.4.4.0.991640.nupkg.sha512"
+      "sha512": "sha512-NI7iL5NnrQN/gCyoHLlexcDndNin67hFV7ObG8QQU2zbEi15B1SRaAsuiNeXVYAHfXg3/amqryqzGd+3R6lyZQ==",
+      "path": "xamarin.forms/4.6.0.726",
+      "hashPath": "xamarin.forms.4.6.0.726.nupkg.sha512"
     },
-    "Xamarin.UITest/1.1.1": {
+    "Xamarin.UITest/3.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-emBQms5xeyo3LAQbslGrppku3F749/eZMRRQHbUGpbXRAEo8up92IR3bt/wc1QT2VjzimjWac2Cgd7t8lOjJhg==",
-      "path": "xamarin.uitest/1.1.1",
-      "hashPath": "xamarin.uitest.1.1.1.nupkg.sha512"
+      "sha512": "sha512-ap8XMH/SyWxsQrIM6CC9wDgwjCavFMDqoJDRNlBCm7LvJxqJ1PZLXzyVaDjSyOTda7R1B28ASbHC2GUTLz4H0g==",
+      "path": "xamarin.uitest/3.0.7",
+      "hashPath": "xamarin.uitest.3.0.7.nupkg.sha512"
     }
   }
 }
