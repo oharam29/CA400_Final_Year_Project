@@ -1,8 +1,10 @@
 ﻿using Microcharts;
 using MMSEApp.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,7 @@ namespace MMSEApp.Views.Patient
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PatientDashboardPage : ContentPage
     {
+        private PatientItem currentPatient;
         private List<Microcharts.Entry> entries = new List<Microcharts.Entry>
         {
             new Microcharts.Entry(200)
@@ -55,10 +58,51 @@ namespace MMSEApp.Views.Patient
             InitializeComponent();
             BindingContext = patientItem;
             MyLineChart.Chart = new LineChart { Entries = entries };
+            currentPatient = patientItem;
         }
 
+        public DbResult Delete_From_DB()
+        {
+            DbResult res = new DbResult();
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            MySqlConnection con = new MySqlConnection(cs);
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand("DELETE FROM TBL_PATIENT WHERE PATIENTID  = @patient_id", con);
+                    cmd.Parameters.AddWithValue("@patient_id", currentPatient.PatientID);
 
 
+                    cmd.ExecuteNonQuery();
 
+                    res.msg = "User Info deleted successfully";
+                    res.success = true;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                res.msg = "Error occured, please try again";
+                res.success = false;
+
+                throw (ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return res;
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DbResult result = Delete_From_DB();
+            if (result.success)
+            {
+                App.Current.MainPage.DisplayAlert(result.msg, "", "ok");
+                Navigation.PopAsync();
+            }
+        }
     }
 }

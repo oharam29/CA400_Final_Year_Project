@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {}
+    "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
+    "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "projectUniqueName": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
         "projectName": "MMSEApp",
-        "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
-        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matth\\OneDrive\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
+        "projectPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\MMSEApp.csproj",
+        "packagesPath": "C:\\Users\\Nova6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova6\\Documents\\Source\\Repos\\2020-ca400-nolanm45-oharam29\\src\\MMSEApp\\MMSEApp\\MMSEApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nova6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -83,7 +83,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
