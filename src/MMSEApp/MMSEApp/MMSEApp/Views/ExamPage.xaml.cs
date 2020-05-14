@@ -54,12 +54,26 @@ namespace MMSEApp.Views
             AddQuestionEntry(0, 2, 1, 2, "What day is it?", "OrientationAns3");
             AddQuestionEntry(0, 3, 1, 3, "What time is it?", "OrientationAns4");
             AddQuestionEntry(0, 4, 1, 4, "What year is it?", "OrientationAns5");
+            
+            var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
+            backButton.Clicked += new EventHandler(cancelExam);
+            QuestionsGrid.Children.Add(backButton, 0, 5);
+
 
             // add the next 
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
+
             nextButton.Clicked += new EventHandler(OrientationQuestionPartTwo);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
+
+        async void cancelExam(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
         private void OrientationQuestionPartTwo(object sender, EventArgs e) // Second part
         {
 
@@ -77,10 +91,12 @@ namespace MMSEApp.Views
             AddQuestionEntry(0, 4, 1, 4, "What ward are we in?", "OrientationAns10");
 
             var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(OrientationQuestions);
             QuestionsGrid.Children.Add(backButton, 0, 5);
             // add the next 
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(RegistrationQuesitons);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
@@ -97,11 +113,13 @@ namespace MMSEApp.Views
 
             // back button 
             var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(OrientationQuestionPartTwo);
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(AttentionCalulationQuestions);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
@@ -115,11 +133,13 @@ namespace MMSEApp.Views
             
 
             var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(RegistrationQuesitons);
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(RecallQuestions);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
 
@@ -135,11 +155,13 @@ namespace MMSEApp.Views
             AddQuestionEntry(0, 2, 1, 2, "", "RecallAns3");
 
             var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(AttentionCalulationQuestions);
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(LanguageQuestions);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
@@ -155,11 +177,13 @@ namespace MMSEApp.Views
             AddQuestionEntry(0, 4, 1, 4, "write a sentence ", "LanguageAns5");
 
             var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(RecallQuestions);
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
             var nextButton = new Button { Text = "Next" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(CopyingQuestion);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
