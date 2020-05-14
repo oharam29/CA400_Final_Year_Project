@@ -140,21 +140,24 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
         
-        private void CopyingQuestion(object sender, EventArgs e)
+        async void CopyingQuestion(object sender, EventArgs e)
         {
-            ClearGrid();
+            await Navigation.PushAsync(new DrawingQuestion());
+            //ClearGrid();
 
-            SectionTitle.Text = "Copying";
-            AddQuestionEntry(0, 0, 1, 0, "Copy this picture");
+            //SectionTitle.Text = "Copying";
+            //AddQuestionEntry(0, 0, 1, 0, "Copy this picture");
 
-            var backButton = new Button { Text = "Back" };
-            backButton.Clicked += new EventHandler(LanguageQuestions);
-            QuestionsGrid.Children.Add(backButton, 0, 5);
+            //var backButton = new Button { Text = "Back" };
+            //backButton.Clicked += new EventHandler(LanguageQuestions);
+            //QuestionsGrid.Children.Add(backButton, 0, 5);
 
-            var FinishTest = new Button { Text = "Finish Test" };
-            FinishTest.Clicked += new EventHandler(RecallQuestions);
-            QuestionsGrid.Children.Add(FinishTest, 1, 5);
+            //var FinishTest = new Button { Text = "Finish Test" };
+            //FinishTest.Clicked += new EventHandler(RecallQuestions); 
+            //QuestionsGrid.Children.Add(FinishTest, 1, 5);
         }
+
+         
 
     }
 }
