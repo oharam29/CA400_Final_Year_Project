@@ -58,7 +58,5 @@ namespace MMSEApp.Views.Patient
         }
 
 
-
-
     }
 }

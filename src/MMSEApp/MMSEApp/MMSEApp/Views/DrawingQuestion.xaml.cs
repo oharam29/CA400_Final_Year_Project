@@ -87,5 +87,18 @@ namespace MMSEApp.Views
 
 			e.Handled = true;
 		}
+
+		private void Back_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PopAsync();
+		}
+
+		private void Finish_Clicked(object sender, EventArgs e)
+		{
+			//update db
+			Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
+			Navigation.PopAsync();
+
+		}
 	}
 }

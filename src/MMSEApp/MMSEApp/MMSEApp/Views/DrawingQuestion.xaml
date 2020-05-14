@@ -7,12 +7,19 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.DrawingQuestion">
 
-            
-            <Grid>
-                <skia:SKCanvasView  PaintSurface="OnPainting"
+    <StackLayout>
+        <Grid HeightRequest="800">
+            <skia:SKCanvasView  PaintSurface="OnPainting"
                         EnableTouchEvents="True" 
                         Touch="OnTouch"/>
-            </Grid>
-            
+
+        </Grid>
+        <StackLayout Spacing="20" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="Back" Clicked="Back_Clicked"/>
+            <Button Text="Finsih Exam" Clicked="Finish_Clicked"/>
+        </StackLayout>
+        
+    </StackLayout>
+
 
 </ContentPage>

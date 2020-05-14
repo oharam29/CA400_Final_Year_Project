@@ -52,11 +52,35 @@ namespace MMSEApp.Views
 
             // add the next 
             var nextButton = new Button { Text = "Next" };
+            nextButton.Clicked += new EventHandler(OrientationQuestionPartTwo);
+            QuestionsGrid.Children.Add(nextButton, 1, 5);
+        }
+        private void OrientationQuestionPartTwo(object sender, EventArgs e) // Second part
+        {
+
+            ExamContent.Children.Remove(startButton); // remove the start button
+
+            ClearGrid();
+
+            SectionTitle.Text = "Orientation";
+
+            // add first set of questions
+            AddQuestionEntry(0, 0, 1, 0, "What Country are we in?");
+            AddQuestionEntry(0, 1, 1, 1, "What Town are we in?");
+            AddQuestionEntry(0, 2, 1, 2, "What District are we in?");
+            AddQuestionEntry(0, 3, 1, 3, "What Hospital are we in?");
+            AddQuestionEntry(0, 4, 1, 4, "What ward are we in?");
+
+            var backButton = new Button { Text = "Back" };
+            backButton.Clicked += new EventHandler(OrientationQuestions);
+            QuestionsGrid.Children.Add(backButton, 0, 5);
+            // add the next 
+            var nextButton = new Button { Text = "Next" };
             nextButton.Clicked += new EventHandler(RegistrationQuesitons);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
 
-        private void RegistrationQuesitons(object sender, EventArgs e) // second part
+        private void RegistrationQuesitons(object sender, EventArgs e) // third part
         {
             ClearGrid();
 
@@ -68,7 +92,7 @@ namespace MMSEApp.Views
 
             // back button 
             var backButton = new Button { Text = "Back" };
-            backButton.Clicked += new EventHandler(OrientationQuestions);
+            backButton.Clicked += new EventHandler(OrientationQuestionPartTwo);
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
@@ -77,7 +101,7 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
 
-        private void AttentionCalulationQuestions(object sender, EventArgs e) // third part 
+        private void AttentionCalulationQuestions(object sender, EventArgs e) // fourth part 
         {
             ClearGrid();
 
@@ -99,13 +123,13 @@ namespace MMSEApp.Views
 
         }
 
-        private void RecallQuestions(object sender, EventArgs e) // fourth part
+        private void RecallQuestions(object sender, EventArgs e) // fifth part
         {
             ClearGrid();
 
             SectionTitle.Text = "Recall";
             AddQuestionEntry(0, 0, 1, 0, "Can you name the 3 objects u learned in section 2");
-            for (int i = 1; i < 4; i++)
+            for (int i = 1; i < 3; i++)
             {
                 QuestionsGrid.Children.Add(new Entry(), 1, i);
             }
@@ -120,7 +144,7 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
 
-        private void LanguageQuestions(object sender, EventArgs e) // fifth part
+        private void LanguageQuestions(object sender, EventArgs e) // sixth part
         {
             ClearGrid();
             SectionTitle.Text = "Language";
