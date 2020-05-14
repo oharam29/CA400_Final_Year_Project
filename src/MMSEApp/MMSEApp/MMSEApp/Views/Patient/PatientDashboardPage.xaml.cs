@@ -95,7 +95,7 @@ namespace MMSEApp.Views.Patient
             return res;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Delete_Patient(object sender, EventArgs e)
         {
             DbResult result = Delete_From_DB();
             if (result.success)
@@ -103,6 +103,12 @@ namespace MMSEApp.Views.Patient
                 App.Current.MainPage.DisplayAlert(result.msg, "", "ok");
                 Navigation.PopAsync();
             }
+        }
+
+        private void Go_Back(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+
         }
     }
 }
