@@ -18,6 +18,6 @@
     <Import Project="C:\Microsoft\Xamarin\NuGet\nunit\3.12.0\build\NUnit.props" Condition="Exists('C:\Microsoft\Xamarin\NuGet\nunit\3.12.0\build\NUnit.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgXamarin_UITest Condition=" '$(PkgXamarin_UITest)' == '' ">C:\Users\Nova6\.nuget\packages\xamarin.uitest\1.1.1</PkgXamarin_UITest>
+    <PkgXamarin_UITest Condition=" '$(PkgXamarin_UITest)' == '' ">C:\Users\matth\.nuget\packages\xamarin.uitest\1.1.1</PkgXamarin_UITest>
   </PropertyGroup>
 </Project>
