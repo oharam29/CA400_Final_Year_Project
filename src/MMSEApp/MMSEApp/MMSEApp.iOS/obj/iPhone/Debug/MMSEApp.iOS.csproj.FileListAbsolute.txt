@@ -1,3 +1,9 @@
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\optimized\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\MMSEApp.iOS.exe
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\MMSEApp.iOS.pdb
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\Microcharts.dll
@@ -65,9 +71,3 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\MMSEApp.iOS.csproj.CopyComplete
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\MMSEApp.iOS.exe
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\MMSEApp.iOS.pdb
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\optimized\
