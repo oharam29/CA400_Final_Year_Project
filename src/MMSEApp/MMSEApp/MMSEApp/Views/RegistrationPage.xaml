@@ -17,6 +17,9 @@
 			HorizontalOptions="CenterAndExpand"/>
 
             <StackLayout Spacing="20">
+                <Entry Placeholder="Enter First Name" Text="{ Binding FirstName}"/>
+                <Entry Placeholder="Enter Last Name" Text="{Binding LastName}"/>
+
                 <Entry Placeholder="Enter Username" Text="{ Binding Username }" AutomationId="RP_Username"/>
                 <Entry Placeholder="Enter Password" IsPassword="True" Text="{ Binding Password }" AutomationId="RP_Password"/>
                 <Entry Placeholder="Confirm Password" IsPassword="True" Text="{ Binding ConfirmPassword }" AutomationId="RP_Password_Con"/>
