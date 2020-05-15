@@ -13,7 +13,7 @@ namespace MMSEApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public INavigation navigation;
-
+        public PatientItem PatientItem;
         public ExamViewModel() { }
         
         // orientation answers
@@ -277,10 +277,21 @@ namespace MMSEApp.ViewModels
         }
         #endregion
 
-        private DbResult SaveExamResult()
+        private string drawingAns1;
+        public string DrawingAns1
+        {
+            get { return drawingAns1; }
+            set
+            {
+                drawingAns1 = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("DrawingAns1"));
+            }
+        }
+
+        public DbResult SaveExamResult()
         {
             DbResult res = new DbResult();
-            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;Allow User Variables=true;";
             MySqlConnection con = new MySqlConnection(cs);
             try
             {
@@ -288,14 +299,53 @@ namespace MMSEApp.ViewModels
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open(); // open connection 
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
-                    //cmd.Parameters.AddWithValue("@user", Username); // add parameters
-                    //cmd.Parameters.AddWithValue("@pass", Password);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_RESULTS(DoctorID,PatientID," +
+                        "OrientationAns1, OrientationAns2, OrientationAns3, OrientationAns4, OrientationAns5," +
+                        "OrientationAns6, OrientationAns7, OrientationAns8, OrientationAns9, OrientationAns10," +
+                        "RegistrationAns1, RegistrationAns2, RegistrationAns3, AttenCalcAns1, RecallAns1, RecallAns2," +
+                        "RecallAns3, LanguageAns1, LanguageAns2, LanguageAns3, LanguageAns4, LanguageAns5, DrawingAns1)" +
+                        " VALUES(@DocID, @PatientID, @OriAns1, @OriAns2, @OriAns3, @OriAns4, @OriAns5, @OriAns6" +
+                        ", @OriAns7, @OriAns8, @OriAns9, @OriAns10, @RegAns1, @RegAns2, @RegAns3, @AttenAns1, @RecAns1, " +
+                        "@RecAns2, @RecAns3, @LangAns1, @LangAns2, @LangAns3, @LangAns4, @LangAns5, @DrawAns1 )", con); // sql query string
+
+                    // add parameters
+                    cmd.Parameters.AddWithValue("@DocID", App.currentDoctor.DoctorId);
+                    cmd.Parameters.AddWithValue("@PatientID", PatientItem.PatientID);
+                    cmd.Parameters.AddWithValue("@OriAns1", OrientationAns1);
+                    cmd.Parameters.AddWithValue("@OriAns2", OrientationAns2);
+                    cmd.Parameters.AddWithValue("@OriAns3", OrientationAns3);
+                    cmd.Parameters.AddWithValue("@OriAns4", OrientationAns4);
+                    cmd.Parameters.AddWithValue("@OriAns5", OrientationAns5);
+                    cmd.Parameters.AddWithValue("@OriAns6", OrientationAns6);
+                    cmd.Parameters.AddWithValue("@OriAns7", OrientationAns7);
+                    cmd.Parameters.AddWithValue("@OriAns8", OrientationAns8);
+                    cmd.Parameters.AddWithValue("@OriAns9", OrientationAns9);
+                    cmd.Parameters.AddWithValue("@OriAns10", OrientationAns10);
+                    cmd.Parameters.AddWithValue("@RegAns1", RegistrationAns1);
+                    cmd.Parameters.AddWithValue("@RegAns2", RegistrationAns2);
+                    cmd.Parameters.AddWithValue("@RegAns3", RegistrationAns3);
+                    cmd.Parameters.AddWithValue("@AttenAns1", AttenCalcAns1);
+                    cmd.Parameters.AddWithValue("@RecAns1", RecallAns1);
+                    cmd.Parameters.AddWithValue("@RecAns2", RecallAns2);
+                    cmd.Parameters.AddWithValue("@RecAns3", RecallAns3);
+                    cmd.Parameters.AddWithValue("@LangAns1", LanguageAns1);
+                    cmd.Parameters.AddWithValue("@LangAns2", LanguageAns2);
+                    cmd.Parameters.AddWithValue("@LangAns3", LanguageAns3);
+                    cmd.Parameters.AddWithValue("@LangAns4", LanguageAns4);
+                    cmd.Parameters.AddWithValue("@LangAns5", LanguageAns5);
+                    cmd.Parameters.AddWithValue("@DrawAns1", DrawingAns1);
+
                     cmd.ExecuteNonQuery(); // execute the query
 
                     res.msg = "User added successfully";
                     res.success = true;
 
+                    MySqlCommand command = new MySqlCommand("UPDATE TBL_PATIENT SET LastTestDate = @now WHERE PatientID = @PID" ,con);
+                    DateTime now = DateTime.Now;
+                    var s = now.ToString("yyyy-MM-dd HH:mm:ss"); // not updatine lasttestdate due to format
+                    cmd.Parameters.AddWithValue("@now", s);
+                    cmd.Parameters.AddWithValue("@PID", PatientItem.PatientID);
+                    command.ExecuteNonQuery();
                 }
             }
             catch (MySqlException ex)

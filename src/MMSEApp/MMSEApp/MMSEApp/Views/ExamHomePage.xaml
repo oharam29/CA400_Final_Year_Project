@@ -14,7 +14,7 @@
 			FontAttributes="Bold"  
 			HorizontalOptions="CenterAndExpand" />
 
-            <StackLayout Spacing="20" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
                 <Label Text="Choose Patient:" FontSize="20" TextColor="#127ac7"/>
                 <SearchBar x:Name="PatientSearch" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
@@ -38,7 +38,7 @@
             </ListView>
 
             <Label x:Name="SelectedLabel"  FontSize="20" TextColor="#127ac7"  HorizontalOptions="Center"/>
-            <Grid x:Name="SelectedPatientGrid" ColumnSpacing="10" HorizontalOptions="Center" >
+            <Grid Margin="10" x:Name="SelectedPatientGrid" ColumnSpacing="10" HorizontalOptions="Center" >
                 
             </Grid>
 

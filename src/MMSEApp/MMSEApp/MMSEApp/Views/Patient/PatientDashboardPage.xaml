@@ -33,11 +33,12 @@
                         <Label Grid.Row="1" Grid.Column="0" Text="Last Name: " FontAttributes="Bold"/>
                         <Label Grid.Row="1" Grid.Column="1" Text="{Binding LastName}"/>
                         <Label Grid.Row="2" Grid.Column="0" Text="Date of Birth: " FontAttributes="Bold"/>
-                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding PatientDOB}"/>
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding PatientDOB}"/>
                         <Label Grid.Row="3" Grid.Column="0" Text="Last Test Date:" FontAttributes="Bold"/>
                         <Label Grid.Row="3" Grid.Column="1" Text="{Binding LastTestDate}"/>
-                    </Grid>
-
+                    <Button Grid.Row="4" Grid.Column="0" Text="View Previous Results" Clicked="Review_Clicked" Style="{StaticResource blueButtonStyle}"/>
+                </Grid>
+                    
                 <Label Text="Previous Results" 			
                        TextColor="#127ac7"
 			            FontSize="22" 
@@ -47,7 +48,7 @@
 
             </StackLayout>
             <Button Text="Delete Patient Data" Clicked="Delete_Patient" BackgroundColor="Red" AutomationId="PD_Delete_Button"/>
-            <Button Text="Back" Clicked="Go_Back" AutomationId="PD_Back_Button"/>
+            <Button Text="Back" Clicked="Go_Back" AutomationId="PD_Back_Button" Style="{StaticResource blueButtonStyle}"/>
 
         </StackLayout>
     </ContentPage.Content>

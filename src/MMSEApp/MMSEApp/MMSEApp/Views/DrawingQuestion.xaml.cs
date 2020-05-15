@@ -1,4 +1,5 @@
-﻿using SkiaSharp;
+﻿using MMSEApp.ViewModels;
+using SkiaSharp;
 using SkiaSharp.Views.Forms;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,10 @@ namespace MMSEApp.Views
     {
 		private readonly Dictionary<long, SKPath> temporaryPaths = new Dictionary<long, SKPath>();
 		private readonly List<SKPath> paths = new List<SKPath>();
-		public DrawingQuestion()
+		private ExamViewModel examViewModel;
+		public DrawingQuestion(ExamViewModel examView)
         {
+			examViewModel = examView;
             InitializeComponent();
         }
 
@@ -96,6 +99,7 @@ namespace MMSEApp.Views
 		private void Finish_Clicked(object sender, EventArgs e)
 		{
 			//update db
+			examViewModel.SaveExamResult();
 			Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
 			Navigation.PopAsync();
 

@@ -90,7 +90,7 @@ namespace MMSEApp.Views
             }
             else
             {
-                PatientsList.ItemsSource = patientItems.Where(p=> p.FirstName.ToLower().Contains(filter.ToLower()) );
+                PatientsList.ItemsSource = patientItems.Where(p=> p.FirstName.ToLower().Contains(filter.ToLower()) || p.LastName.ToLower().Contains(filter.ToLower())  );
             }
             PatientsList.EndRefresh();
         }

@@ -1,4 +1,5 @@
 ﻿using MMSEApp.ViewModels;
+using MMSEApp.Views.Patient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,5 +34,7 @@ namespace MMSEApp.Views
         {
             newPatientViewModel.Dob = DatePicker.Date;
         }
+
+
     }
 }

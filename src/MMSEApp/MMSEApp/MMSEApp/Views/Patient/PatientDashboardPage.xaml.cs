@@ -105,9 +105,14 @@ namespace MMSEApp.Views.Patient
             }
         }
 
-        private void Go_Back(object sender, EventArgs e)
+        async void Review_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            await Navigation.PushAsync(new ReviewTestHomePage(currentPatient));
+        }
+
+        async void Go_Back(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
 
         }
     }

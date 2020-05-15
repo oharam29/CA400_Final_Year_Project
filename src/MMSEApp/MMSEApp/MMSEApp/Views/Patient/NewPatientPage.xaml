@@ -26,6 +26,8 @@
                 <DatePicker x:Name="DatePicker"  DateSelected="DatePicker_DateSelected" AutomationId="NP_Date Picker"/>
             </StackLayout>
             
+
+
             <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
                 <Button Text="Save Patient" Command="{ Binding AddPatient } " Style="{StaticResource blueButtonStyle}" AutomationId="NP_Save"/>
                 <Button Text="Cancel" Clicked="Cancel_Button_Clicked" Style="{StaticResource blueButtonStyle}" AutomationId="NP_Cancel"/>

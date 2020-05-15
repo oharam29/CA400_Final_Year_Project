@@ -24,7 +24,7 @@ namespace MMSEApp.Views
 
         async void StartExamButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExamPage());
+            await Navigation.PushAsync(new ExamPage(PatientSelected));
         }
 
         private List<PatientItem> GetPatients()
@@ -85,7 +85,7 @@ namespace MMSEApp.Views
             }
             else
             {
-                PatientsList.ItemsSource = patientItems.Where(p => p.FirstName.ToLower().Contains(filter.ToLower()));
+                PatientsList.ItemsSource = patientItems.Where(p => p.FirstName.ToLower().Contains(filter.ToLower()) || p.LastName.ToLower().Contains(filter.ToLower()));
             }
             PatientsList.EndRefresh();
         }

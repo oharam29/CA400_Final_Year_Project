@@ -1,4 +1,5 @@
-﻿using MMSEApp.ViewModels;
+﻿using MMSEApp.Models;
+using MMSEApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,12 @@ namespace MMSEApp.Views
     public partial class ExamPage : ContentPage
     {
         ExamViewModel examViewModel;
-        public ExamPage()
+        public ExamPage(PatientItem PatientSelected)
         {
             examViewModel = new ExamViewModel();
             InitializeComponent();
             BindingContext = examViewModel;
+            examViewModel.PatientItem = PatientSelected;
             startExam();
         }
 
@@ -91,7 +93,7 @@ namespace MMSEApp.Views
             // add first set of questions
             AddQuestionEntry(0, 0, 1, 0, "What Country are we in?", "OrientationAns6");
             AddQuestionEntry(0, 1, 1, 1, "What Town are we in?", "OrientationAns7");
-            AddQuestionEntry(0, 2, 1, 2, "What District are we in?", "OrientationAns8");
+            AddQuestionEntry(0, 2, 1, 2, "What Province are we in?", "OrientationAns8");
             AddQuestionEntry(0, 3, 1, 3, "What Hospital are we in?", "OrientationAns9");
             AddQuestionEntry(0, 4, 1, 4, "What ward are we in?", "OrientationAns10");
 
@@ -195,7 +197,7 @@ namespace MMSEApp.Views
         
         async void CopyingQuestion(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DrawingQuestion());
+            await Navigation.PushAsync(new DrawingQuestion(examViewModel));
             //ClearGrid();
 
             //SectionTitle.Text = "Copying";
