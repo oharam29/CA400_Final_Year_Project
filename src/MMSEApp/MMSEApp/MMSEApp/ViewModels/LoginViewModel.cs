@@ -13,7 +13,7 @@ namespace MMSEApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public LoginViewModel() { }
-        
+
         private int userId;
         public int UserID
         {
@@ -66,8 +66,6 @@ namespace MMSEApp.ViewModels
                 DbResult res = DB_Validate();
                 if (res.success)
                 {
-                    MainPage main = new MainPage();
-                    Application.Current.MainPage = main;
                     App.currentUser = new User
                     {
                         UserId = UserID,
@@ -75,6 +73,10 @@ namespace MMSEApp.ViewModels
                         PassWord = Password
 
                     };
+                    UpdateCurrentDoc();
+                    MainPage main = new MainPage();
+                    Application.Current.MainPage = main;
+
                 }
                 else
                     App.Current.MainPage.DisplayAlert("Login Fail", res.msg, "OK");
@@ -82,7 +84,7 @@ namespace MMSEApp.ViewModels
         }
 
         private DbResult DB_Validate()
-        { 
+        {
             List<User> Users = new List<User>();
             string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
             MySqlConnection con = new MySqlConnection(cs);
@@ -98,7 +100,7 @@ namespace MMSEApp.ViewModels
                         {
                             while (reader.Read()) // read in query results
                             {
-                                User U = new User 
+                                User U = new User
                                 {
                                     UserId = reader.GetInt32(0),
                                     UserName = reader.GetString(1), // get the corresponding values 
@@ -108,7 +110,7 @@ namespace MMSEApp.ViewModels
                             }
                         }
                     }
-                    DbResult result = new DbResult(); 
+                    DbResult result = new DbResult();
                     foreach (User user in Users) // iterate through the list of users to find desired user
                     {
                         if (user.UserName == Username)
@@ -120,7 +122,7 @@ namespace MMSEApp.ViewModels
                                 result.success = true;
                             }
                             else // else do not log user in 
-                            { 
+                            {
                                 result.msg = "Incorrect Password";
                                 result.success = false;
                             }
@@ -129,10 +131,10 @@ namespace MMSEApp.ViewModels
                         else
                         {
                             result.msg = "Incorrect Username";
-                            result.success = false; 
+                            result.success = false;
                         }
                     }
-                    return result; 
+                    return result;
                 }
             }
             catch (MySqlException ex)
@@ -144,10 +146,50 @@ namespace MMSEApp.ViewModels
                 con.Close(); // close connection
             }
 
-            return new DbResult { success = false, msg = "" }; 
+            return new DbResult { success = false, msg = "" };
         }
 
-    }
+        private void UpdateCurrentDoc()
+        {
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            MySqlConnection con = new MySqlConnection(cs);
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open(); // open db connection
+                    
+                    MySqlCommand query = new MySqlCommand("SELECT * FROM TBL_DOCTOR WHERE UserID=@user", con);
+                    query.Parameters.AddWithValue("@user", App.currentUser.UserId ); // add parameters
+                    
+                    using (MySqlDataReader reader = query.ExecuteReader())
+                    {
+                        while (reader.Read()) // read in query results
+                        {
+                            App.currentDoctor = new Doctor
+                            {
+                                DoctorId = reader.GetInt32(0),
+                                LastName = reader.GetString(1),
+                                FirstName = reader.GetString(2),
+                                UserId = reader.GetInt32(3)
+                            };
+                        }
+                    }
+                    
 
+                }
+            }
+            catch (MySqlException ex)
+            {
+                throw (ex);
+            }
+            finally
+            {
+                con.Close(); // close connection
+
+            }
+
+        }
+    }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MMSEApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace MMSEApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
+        Doctor currentDoc = App.currentDoctor;
         public HomePage()
         {
             InitializeComponent();
+            DocName.Text = currentDoc.FirstName + " " + currentDoc.LastName;
         }
     }
 }

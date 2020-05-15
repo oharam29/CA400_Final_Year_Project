@@ -23,6 +23,10 @@
                 </Style>
             </StackLayout.Resources>
 
+            <StackLayout x:Name="DocInfo" BindingContext="currentDoc">
+                <Label x:Name="DocName"/>    
+            </StackLayout>
+            
 
             <Grid RowSpacing="30" ColumnSpacing="20" >
 

@@ -63,6 +63,7 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\Xamarin.UITest.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\bin\iPhone\Debug\MMSEApp.pdb
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items

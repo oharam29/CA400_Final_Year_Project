@@ -37,6 +37,8 @@ C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\M
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\ref\MMSEApp.dll
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.pdb
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csprojAssemblyReference.cache
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csproj.CoreCompileInputs.cache
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\NUnit3.TestAdapter.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\NUnit3.TestAdapter.pdb
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\nunit.engine.dll
@@ -45,6 +47,7 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\ref\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.pdb
+C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csprojAssemblyReference.cache
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\DrawingQuestion.xaml.g.cs
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\ExamHomePage.xaml.g.cs
@@ -64,6 +67,3 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\ref\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.pdb
-C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csprojAssemblyReference.cache
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csprojAssemblyReference.cache
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.csproj.CoreCompileInputs.cache
