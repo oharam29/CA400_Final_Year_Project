@@ -6,10 +6,41 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.ExamHomePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Exam home page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="20">
+            <Label HorizontalTextAlignment="Center"			
+            Text="Exam page"
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout Spacing="20" Orientation="Horizontal">
+                <Label Text="Choose Patient:" FontSize="20" TextColor="#127ac7"/>
+                <SearchBar x:Name="PatientSearch" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <ListView HeightRequest="150" x:Name="PatientsList" SeparatorVisibility="Default" ItemSelected="PatientsList_ItemSelected" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Spacing="20" Orientation="Horizontal">
+
+                                <Label x:Name="PatientID" Text="{Binding PatientID, StringFormat='Patient ID = {0}'}"/>
+                                <Label x:Name="FirstName" Text="{Binding FirstName}" />
+                                <Label x:Name="LastName" Text="{Binding LastName}"/>
+                                <Label x:Name="DateOfBirth" Text="{ Binding PatientDOB}"/>
+                                <Label x:Name="LastTestDate" Text="{ Binding LastTestDate }"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label x:Name="SelectedLabel"  FontSize="20" TextColor="#127ac7"  HorizontalOptions="Center"/>
+            <Grid x:Name="SelectedPatientGrid" ColumnSpacing="10" HorizontalOptions="Center" >
+                
+            </Grid>
 
             <Button Text="Start Exam"
                     Clicked="StartExamButtonClicked"/>

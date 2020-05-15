@@ -5,7 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.PatientsViewPage">
-    <StackLayout Spacing="20">
+    <StackLayout HorizontalOptions="Center" Spacing="20">
+        <Label HorizontalTextAlignment="Center"			
+            Text="Patients"
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="CenterAndExpand" />
+
         <Grid Margin="10">
 
             <Grid.RowDefinitions>
@@ -22,12 +29,12 @@
                 </Grid.ColumnDefinitions>
 
                 <Button  Grid.Column="0" Text="New Patient" Clicked="Add_New_Patient_Button_Clicked" Style="{StaticResource blueButtonStyle}" AutomationId="RP_New"/>
-                <SearchBar  Grid.Column="1" Placeholder="Search for Patients" AutomationId="PV_Search"/>
+                <SearchBar x:Name="PatientSearch" Grid.Column="1" Placeholder="Search for Patients" AutomationId="PV_Search"/>
             
             </Grid>
 
             <!-- Patient List -->
-            <ListView Grid.Row="1" x:Name="PatientsList" SeparatorVisibility="Default" ItemSelected="PatientsList_ItemSelected">
+            <ListView Grid.Row="1" x:Name="PatientsList" SeparatorVisibility="Default" ItemSelected="PatientsList_ItemSelected" IsPullToRefreshEnabled="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >

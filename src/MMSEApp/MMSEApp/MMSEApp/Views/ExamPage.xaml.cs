@@ -20,6 +20,7 @@ namespace MMSEApp.Views
             examViewModel = new ExamViewModel();
             InitializeComponent();
             BindingContext = examViewModel;
+            startExam();
         }
 
         private void ClearGrid() 
@@ -27,7 +28,7 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Clear(); // emptys grid
         }
 
-        private void AddQuestionEntry(int QColumn, int QRow, int AColumn, int ARow, string question, string binding="") 
+        private void AddQuestionEntry(int QColumn, int QRow, int AColumn, int ARow, string question, string binding) 
         {
             var Question = new Label { Text = question }; // makes a new label with the question set as its text
             var Answer = new Entry(); // adds a new entry for answer
@@ -37,11 +38,9 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(Answer, AColumn, ARow); // add answer to row
         }
 
-       
-        private void OrientationQuestions(object sender, EventArgs e) // first part
+        private void startExam()
         {
-
-            ExamContent.Children.Remove(startButton); // remove the start button
+            
 
             ClearGrid();
 
@@ -54,7 +53,7 @@ namespace MMSEApp.Views
             AddQuestionEntry(0, 2, 1, 2, "What day is it?", "OrientationAns3");
             AddQuestionEntry(0, 3, 1, 3, "What time is it?", "OrientationAns4");
             AddQuestionEntry(0, 4, 1, 4, "What year is it?", "OrientationAns5");
-            
+
             var backButton = new Button { Text = "Back" };
             backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             backButton.Clicked += new EventHandler(cancelExam);
@@ -69,6 +68,12 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(nextButton, 1, 5);
         }
 
+       
+        private void OrientationQuestions(object sender, EventArgs e) // first part
+        {
+            startExam();
+        }
+
         async void cancelExam(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
@@ -77,7 +82,7 @@ namespace MMSEApp.Views
         private void OrientationQuestionPartTwo(object sender, EventArgs e) // Second part
         {
 
-            ExamContent.Children.Remove(startButton); // remove the start button
+            
 
             ClearGrid();
 

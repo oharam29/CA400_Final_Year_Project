@@ -16,10 +16,13 @@ namespace MMSEApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PatientsViewPage : ContentPage
     {
+        private List<PatientItem> patientItems;
         public PatientsViewPage()
         {
             InitializeComponent();
-            PatientsList.ItemsSource = GetPatients();
+            patientItems = GetPatients();
+            PatientsList.ItemsSource = patientItems;
+            InitSearch();
         }
 
         async void Add_New_Patient_Button_Clicked(object sender, EventArgs e)
@@ -73,6 +76,23 @@ namespace MMSEApp.Views
         async void PatientsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushAsync(new PatientDashboardPage(e.SelectedItem as PatientItem));
+        }
+
+        void InitSearch() {
+            PatientSearch.TextChanged += (s, e) => FilterItem(PatientSearch.Text);
+        }
+
+        private void FilterItem(string filter)
+        {
+            PatientsList.BeginRefresh();
+            if (string.IsNullOrEmpty(filter)) {
+                PatientsList.ItemsSource = patientItems;
+            }
+            else
+            {
+                PatientsList.ItemsSource = patientItems.Where(p=> p.FirstName.ToLower().Contains(filter.ToLower()) );
+            }
+            PatientsList.EndRefresh();
         }
     }
 }

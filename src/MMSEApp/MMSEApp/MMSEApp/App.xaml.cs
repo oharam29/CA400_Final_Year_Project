@@ -8,7 +8,7 @@ namespace MMSEApp
 {
     public partial class App : Application
     {
-        public static User currentUser;
+        public static User currentUser; // global variables
         public static Doctor currentDoctor;
         public App()
         {

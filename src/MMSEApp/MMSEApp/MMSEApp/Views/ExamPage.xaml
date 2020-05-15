@@ -11,14 +11,7 @@
         <StackLayout x:Name="ExamContent">
            
             
-            <Button
-                
-			    Text="Start Exam" 
-			    TextColor="White"
-			    BackgroundColor="#1dabf0"
-                CornerRadius="10"
-                Clicked="OrientationQuestions"
-                x:Name="startButton"/>
+ 
 
             <Label x:Name="SectionTitle" HorizontalOptions="Center"/> 
  
