@@ -116,34 +116,44 @@ namespace MMSEApp.ViewModels
                 {
                     // add to user table
                     con.Open(); // open connection 
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
-                    cmd.Parameters.AddWithValue("@user", Username); // add parameters
-                    cmd.Parameters.AddWithValue("@pass", Password);
-                    cmd.ExecuteNonQuery(); // execute the query
-
-                    res.msg = "User added successfully";
-                    res.success = true;
-
-                    MySqlCommand cmd2 = new MySqlCommand("SELECT UserID FROM TBL_USER WHERE UserName=@user;", con); // sql query string
-                    cmd2.Parameters.AddWithValue("@user", Username); // add parameters
-
-                    User u = new User();
-                    using (MySqlDataReader reader = cmd2.ExecuteReader())
+                    MySqlCommand init_check = new MySqlCommand("SELECT UserName FROM TBL_USER WHERE UserName=@user;", con); // sql query string
+                    init_check.Parameters.AddWithValue("@user", Username); // add parameters
+                    MySqlDataReader init_reader = init_check.ExecuteReader();
+                    if (!init_reader.HasRows)
                     {
-                        while (reader.Read()) // read in query results
-                        {
-                            u.UserId = reader.GetInt32(0);
-                        };
-                    }
-                    
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
+                        cmd.Parameters.AddWithValue("@user", Username); // add parameters
+                        cmd.Parameters.AddWithValue("@pass", Password);
+                        cmd.ExecuteNonQuery(); // execute the query
 
-                    // add to doctor table
-                    MySqlCommand cmd3 = new MySqlCommand("INSERT INTO TBL_DOCTOR(LastName, FirstName,UserID) VALUES(@user, @pass,@userid)", con); // sql query string
-                    cmd3.Parameters.AddWithValue("@user", Username); // add parameters
-                    cmd3.Parameters.AddWithValue("@pass", Password);
-                    cmd3.Parameters.AddWithValue("@userid", u.UserId);
-                    cmd3.ExecuteNonQuery(); // execute the query
+                        res.msg = "User added successfully";
+                        res.success = true;
+
+                        MySqlCommand cmd2 = new MySqlCommand("SELECT UserID FROM TBL_USER WHERE UserName=@user;", con); // sql query string
+                        cmd2.Parameters.AddWithValue("@user", Username); // add parameters
+
+                        User u = new User();
+                        using (MySqlDataReader reader = cmd2.ExecuteReader())
+                        {
+                            while (reader.Read()) // read in query results
+                            {
+                                u.UserId = reader.GetInt32(0);
+                            };
+                        }
+
+                        // add to doctor table
+                        MySqlCommand cmd3 = new MySqlCommand("INSERT INTO TBL_DOCTOR(LastName, FirstName,UserID) VALUES(@user, @pass,@userid)", con); // sql query string
+                        cmd3.Parameters.AddWithValue("@user", Username); // add parameters
+                        cmd3.Parameters.AddWithValue("@pass", Password);
+                        cmd3.Parameters.AddWithValue("@userid", u.UserId);
+                        cmd3.ExecuteNonQuery(); // execute the query
+                    }
+                    else
+                    {
+                        App.Current.MainPage.DisplayAlert("User already exists", "Please choose another username", "Ok");
+                    }
                 }
+                
             }
             catch (MySqlException ex)
             {

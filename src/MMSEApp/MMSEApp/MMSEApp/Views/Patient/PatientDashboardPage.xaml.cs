@@ -77,7 +77,7 @@ namespace MMSEApp.Views.Patient
 
                     cmd.ExecuteNonQuery();
 
-                    res.msg = "User Info deleted successfully";
+                    res.msg = "Patient Info deleted successfully";
                     res.success = true;
                 }
             }
@@ -100,7 +100,7 @@ namespace MMSEApp.Views.Patient
             DbResult result = Delete_From_DB();
             if (result.success)
             {
-                App.Current.MainPage.DisplayAlert(result.msg, "", "ok");
+                App.Current.MainPage.DisplayAlert(result.msg, "", "Ok");
                 Navigation.PopAsync();
             }
         }
