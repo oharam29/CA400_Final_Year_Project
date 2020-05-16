@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:fontawesome="clr-namespace:FontAwesome"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.HomePage">
     <ContentPage.Content>
@@ -34,9 +34,23 @@
                 <Label Text="Welcome " FontSize="20" />
                 <Label x:Name="DocName" FontSize="20" />    
             </StackLayout>
+
+            <Grid>
+                <StackLayout Spacing="10" Grid.Column="0" Orientation="Vertical" VerticalOptions="Center">
+                    <Button Text="Patients" Clicked="Patients_Clicked"/>
+                    <Button Text="Exams" Clicked="Exams_Clicked"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="1">
+                    <Label HorizontalOptions="Center" Text="Average Exam score by Age group"/>
+                    <forms:ChartView  x:Name="MyLineChart" HeightRequest="400"/>
+                </StackLayout>
+                
+            </Grid>
             
 
-            <Grid RowSpacing="30" ColumnSpacing="20" >
+
+            <!--<Grid RowSpacing="30" ColumnSpacing="20" >
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -58,7 +72,7 @@
 
                 <Button Grid.Row="1" Grid.Column="1" Text="Calendar"/>
                 
-            </Grid>
+            </Grid>-->
 
         </StackLayout>
     </ContentPage.Content>

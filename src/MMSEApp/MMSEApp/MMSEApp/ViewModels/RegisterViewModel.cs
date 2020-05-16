@@ -114,13 +114,15 @@ namespace MMSEApp.ViewModels
 
                 if (con.State == ConnectionState.Closed)
                 {
-                    // add to user table
+                    //// add to user table
                     con.Open(); // open connection 
+
                     MySqlCommand init_check = new MySqlCommand("SELECT UserName FROM TBL_USER WHERE UserName=@user;", con); // sql query string
                     init_check.Parameters.AddWithValue("@user", Username); // add parameters
                     MySqlDataReader init_reader = init_check.ExecuteReader();
                     if (!init_reader.HasRows)
                     {
+                        init_reader.Close();
                         MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_USER(UserName, PassWord) VALUES(@user, @pass)", con); // sql query string
                         cmd.Parameters.AddWithValue("@user", Username); // add parameters
                         cmd.Parameters.AddWithValue("@pass", Password);

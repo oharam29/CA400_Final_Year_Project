@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MMSEApp.Views;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,10 +66,11 @@ namespace MMSEApp.ViewModels
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_PATIENT(FirstName, LastName, DateOfBirth) VALUES(@firstname, @lastname, @dateofbirth)", con);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO TBL_PATIENT(FirstName, LastName, DateOfBirth,DoctorID) VALUES(@firstname, @lastname, @dateofbirth, @doc)", con);
                     cmd.Parameters.AddWithValue("@firstname", Firstname);
                     cmd.Parameters.AddWithValue("@lastname", Lastname);
                     cmd.Parameters.AddWithValue("@dateofbirth", Dob);
+                    cmd.Parameters.AddWithValue("@doc",App.currentDoctor.DoctorId);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -81,6 +83,11 @@ namespace MMSEApp.ViewModels
                 con.Close();
                 string patientName ="Patient: " + Firstname + " " + Lastname + " added" ;
                 App.Current.MainPage.DisplayAlert(patientName, "", "OK");
+
+                var patientPage = new PatientsViewPage();
+                
+                navigation.InsertPageBefore(patientPage, navigation.NavigationStack[navigation.NavigationStack.Count-1] ) ;
+                navigation.RemovePage(navigation.NavigationStack[navigation.NavigationStack.Count - 1]);
                 navigation.PopAsync();
             }
         }
