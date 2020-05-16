@@ -207,7 +207,7 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
-            var nextButton = new Button { Text = "Save Results" };
+            var nextButton = new Button { Text = "Next" };
             nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(DrawingResult);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
@@ -225,7 +225,7 @@ namespace MMSEApp.Views
             QuestionsGrid.Children.Add(backButton, 0, 5);
 
             // next button
-            var nextButton = new Button { Text = "Next" };
+            var nextButton = new Button { Text = "Save Results" };
             nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(SaveResults);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
