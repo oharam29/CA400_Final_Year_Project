@@ -288,6 +288,17 @@ namespace MMSEApp.ViewModels
             }
         }
 
+        private int examScore;
+        public int ExamScore
+        {
+            get { return examScore; }
+            set
+            {
+                examScore = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("ExamScore"));
+            }
+        }
+
         public DbResult SaveExamResult()
         {
             DbResult res = new DbResult();
@@ -303,10 +314,10 @@ namespace MMSEApp.ViewModels
                         "OrientationAns1, OrientationAns2, OrientationAns3, OrientationAns4, OrientationAns5," +
                         "OrientationAns6, OrientationAns7, OrientationAns8, OrientationAns9, OrientationAns10," +
                         "RegistrationAns1, RegistrationAns2, RegistrationAns3, AttenCalcAns1, RecallAns1, RecallAns2," +
-                        "RecallAns3, LanguageAns1, LanguageAns2, LanguageAns3, LanguageAns4, LanguageAns5, DrawingAns1)" +
+                        "RecallAns3, LanguageAns1, LanguageAns2, LanguageAns3, LanguageAns4, LanguageAns5, DrawingAns1, ExamScore)" +
                         " VALUES(@DocID, @PatientID, @OriAns1, @OriAns2, @OriAns3, @OriAns4, @OriAns5, @OriAns6" +
                         ", @OriAns7, @OriAns8, @OriAns9, @OriAns10, @RegAns1, @RegAns2, @RegAns3, @AttenAns1, @RecAns1, " +
-                        "@RecAns2, @RecAns3, @LangAns1, @LangAns2, @LangAns3, @LangAns4, @LangAns5, @DrawAns1 )", con); // sql query string
+                        "@RecAns2, @RecAns3, @LangAns1, @LangAns2, @LangAns3, @LangAns4, @LangAns5, @DrawAns1, @result )", con); // sql query string
 
                     DrawingAns1 = "Test Draw";
                     // add parameters
@@ -335,18 +346,29 @@ namespace MMSEApp.ViewModels
                     cmd.Parameters.AddWithValue("@LangAns4", LanguageAns4);
                     cmd.Parameters.AddWithValue("@LangAns5", LanguageAns5);
                     cmd.Parameters.AddWithValue("@DrawAns1", DrawingAns1);
+                    cmd.Parameters.AddWithValue("@result", ExamScore);
 
                     cmd.ExecuteNonQuery(); // execute the query
 
                     res.msg = "User added successfully";
                     res.success = true;
 
-                    MySqlCommand command = new MySqlCommand("UPDATE TBL_PATIENT SET LastTestDate = @now WHERE PatientID = @PID" ,con);
-                    DateTime now = DateTime.Now;
-                    var s = now.ToString("yyyy-MM-dd HH:mm:ss"); // not updatine lasttestdate due to format
-                    cmd.Parameters.AddWithValue("@now", s);
+                    MySqlCommand command = new MySqlCommand("UPDATE TBL_PATIENT SET LastTestDate = @now WHERE PatientID = @PID", con);
+ 
+                    MySqlCommand command2 = new MySqlCommand("SELECT DateTaken FROM TBL_RESULTS ORDER BY DateTaken LIMIT 1", con);
+                    using (MySqlDataReader reader = command2.ExecuteReader())
+                    {
+                        while (reader.Read()) // read in query results
+                        {
+                            cmd.Parameters.AddWithValue("@now", reader.GetDateTime(0));
+                        };
+                    }
+  
+                    
                     cmd.Parameters.AddWithValue("@PID", PatientItem.PatientID);
                     command.ExecuteNonQuery();
+
+                    App.Current.MainPage.DisplayAlert("Exam Saved","","OK");
                 }
             }
             catch (MySqlException ex)

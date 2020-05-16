@@ -45,9 +45,10 @@ namespace MMSEApp.Views
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
-                    string query = "SELECT * FROM TBL_PATIENT";
+                    string query = "SELECT * FROM TBL_PATIENT WHERE DoctorID = @doc";
                     using (MySqlCommand command = new MySqlCommand(query, con))
                     {
+                        command.Parameters.AddWithValue("@doc", App.currentDoctor.DoctorId);
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())

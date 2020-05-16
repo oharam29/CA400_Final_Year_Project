@@ -74,7 +74,8 @@ namespace MMSEApp.Views.Patient
                                         LanguageAns4 = reader.GetString(23),
                                         LanguageAns5 = reader.GetString(24),
                                         DrawingAns1 = reader.GetString(25),
-                                        DateTaken = reader.GetDateTime(26)
+                                        DateTaken = reader.GetDateTime(26), 
+                                        ExamScore = reader.GetInt32(27)
                                     }) ; 
                             }
                         }

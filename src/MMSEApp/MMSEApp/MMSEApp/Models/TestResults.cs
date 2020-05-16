@@ -34,6 +34,7 @@ namespace MMSEApp.Models
         public string LanguageAns5 { get; set; }
         public string DrawingAns1 { get; set; }
         public DateTime DateTaken { get; set; }
+        public int ExamScore { get; set; }
 
     }
 }

@@ -7,9 +7,25 @@
              x:Class="MMSEApp.Views.CorrectExam">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Correct Exam"  
+                    HorizontalTextAlignment="Center"			
+			        TextColor="#127ac7"
+			        FontSize="30" 
+			        FontAttributes="Bold"  
+			        HorizontalOptions="CenterAndExpand"/>
+
+
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label x:Name="SectionTitle" HorizontalOptions="Center"/>
+                <Label x:Name="Score" Text="{Binding ExamScore, StringFormat='Current Score = {0}' }"/>
+            </StackLayout>
             
             
-            
+            <Grid x:Name="QuestionsGrid" Padding="20">
+
+            </Grid>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

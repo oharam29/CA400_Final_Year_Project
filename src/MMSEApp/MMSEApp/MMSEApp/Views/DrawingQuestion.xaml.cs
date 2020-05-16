@@ -99,9 +99,10 @@ namespace MMSEApp.Views
 		private void Finish_Clicked(object sender, EventArgs e)
 		{
 			//update db
-			examViewModel.SaveExamResult();
-			Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
-			Navigation.PopAsync();
+			//examViewModel.SaveExamResult();
+			Navigation.PushAsync(new CorrectExam(examViewModel));
+			//Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
+			//Navigation.PopAsync();
 
 		}
 	}
