@@ -21,6 +21,7 @@
                             <StackLayout Spacing="20" Orientation="Horizontal">
 
                                 <Label x:Name="ResultID" Text="{Binding ResultID, StringFormat='Result ID = {0}'}"/>
+                                <Label x:Name="ExamScore" Text="{Binding ExamScore, StringFormat='Exam score  = {0}'}"/>
                                 <Label x:Name="DateTaken" Text="{Binding DateTaken, StringFormat='Date Exam  = {0}'}"/>
 
                             </StackLayout>

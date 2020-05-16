@@ -20,6 +20,7 @@ namespace MMSEApp.Views.Patient
             InitializeComponent();
             BindingContext = testResults;
             date.Text = "Date Taken: "+ testResults.DateTaken.ToString();
+            score.Text = "Exam Score: " + testResults.ExamScore.ToString(); 
             startReview();
         }
 
@@ -51,7 +52,7 @@ namespace MMSEApp.Views.Patient
             AddQuestionEntry(0, 1, 1, 1, "What month is it?", results.OrientationAns2);
             AddQuestionEntry(0, 2, 1, 2, "What day is it?", results.OrientationAns3);
             AddQuestionEntry(0, 3, 1, 3, "What time is it?", results.OrientationAns4);
-            AddQuestionEntry(0, 4, 1, 4, "What year is it?", results.OrientationAns5);
+            AddQuestionEntry(0, 4, 1, 4, "What date is it?", results.OrientationAns5);
 
             var backButton = new Button { Text = "Back" };
             backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
