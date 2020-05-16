@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
             <!--Style for buttons on this page-->
             <StackLayout.Resources>
@@ -18,8 +18,8 @@
                     <Setter Property="TextColor" Value="White" />
                     <Setter Property="BackgroundColor" Value="#1dabf0" />
                     <Setter Property="CornerRadius" Value="10" />
-                    <Setter Property="WidthRequest" Value="180" />
-                    <Setter Property="HeightRequest" Value="160" />
+                    <Setter Property="WidthRequest" Value="140" />
+                    <Setter Property="HeightRequest" Value="120" />
                 </Style>
             </StackLayout.Resources>
             
@@ -35,18 +35,18 @@
                 <Label x:Name="DocName" FontSize="20" />    
             </StackLayout>
 
-            <Grid>
-                <StackLayout Spacing="10" Grid.Column="0" Orientation="Vertical" VerticalOptions="Center">
-                    <Button Text="Patients" Clicked="Patients_Clicked"/>
-                    <Button Text="Exams" Clicked="Exams_Clicked"/>
-                </StackLayout>
+            
+            <StackLayout Spacing="10" Orientation="Horizontal" VerticalOptions="Center">
+                <Button Text="Patients Page" Clicked="Patients_Clicked"/>
+                <Button Text="Exams Home Page" Clicked="Exams_Clicked"/>
+            </StackLayout>
                 
-                <StackLayout Grid.Column="1">
-                    <Label HorizontalOptions="Center" Text="Average Exam score by Age group"/>
-                    <forms:ChartView  x:Name="MyLineChart" HeightRequest="400"/>
-                </StackLayout>
+            <StackLayout >
+                <Label HorizontalOptions="Center" Text="Average Exam score by Age group"/>
+                <forms:ChartView  x:Name="MyLineChart" HeightRequest="400"/>
+            </StackLayout>
                 
-            </Grid>
+            
             
 
 

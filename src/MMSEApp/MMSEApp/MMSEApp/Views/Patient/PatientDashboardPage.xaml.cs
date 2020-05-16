@@ -150,6 +150,11 @@ namespace MMSEApp.Views.Patient
             if (result.success)
             {
                 App.Current.MainPage.DisplayAlert(result.msg, "", "Ok");
+
+                var patientPage = new PatientsViewPage();
+
+                Navigation.InsertPageBefore(patientPage, Navigation.NavigationStack[Navigation.NavigationStack.Count - 1]);
+                Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 1]);
                 Navigation.PopAsync();
             }
         }
