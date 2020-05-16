@@ -57,8 +57,9 @@ namespace MMSEApp.Views.Patient
         {
             InitializeComponent();
             BindingContext = patientItem;
-            MyLineChart.Chart = new LineChart { Entries = entries };
             currentPatient = patientItem;
+            MyLineChart.Chart = new LineChart { Entries = GetResults() };
+
         }
 
         public DbResult Delete_From_DB()
@@ -93,6 +94,54 @@ namespace MMSEApp.Views.Patient
                 con.Close();
             }
             return res;
+        }
+
+        private List<Microcharts.Entry> GetResults()
+        {
+            List<Microcharts.Entry> entries = new List<Microcharts.Entry>();
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            MySqlConnection con = new MySqlConnection(cs);
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+
+
+                    string query = "SELECT ExamScore FROM TBL_RESULTS WHERE PatientID = @patient_id"; // sql query string
+                    using (MySqlCommand command = new MySqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@patient_id", currentPatient.PatientID);
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            int i = 1;
+                            while (reader.Read()) // read in query results
+                            {
+                                Microcharts.Entry entry = new Microcharts.Entry(reader.GetInt32(0))
+                                {
+                                    Label = "Test " + i.ToString(),
+                                    ValueLabel = reader.GetInt32(0).ToString(),
+                                    Color = SkiaSharp.SKColor.Parse("#127ac7")
+                                };
+                                entries.Add(entry);
+                                i++;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+            catch (MySqlException ex)
+            {
+                throw (ex);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            return entries;
         }
 
         private void Delete_Patient(object sender, EventArgs e)

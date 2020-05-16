@@ -43,7 +43,7 @@
                        TextColor="#127ac7"
 			            FontSize="22" 
 			            FontAttributes="Bold" />
-                <forms:ChartView x:Name="MyLineChart" HeightRequest="125"/>
+                <forms:ChartView x:Name="MyLineChart" HeightRequest="230"/>
 
 
             </StackLayout>
