@@ -11,10 +11,6 @@ C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Xam
 C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\ref\MMSEApp.dll
 C:\Users\matth\source\repos\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.pdb
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\NUnit3.TestAdapter.dll
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\NUnit3.TestAdapter.pdb
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\nunit.engine.dll
-C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\nunit.engine.api.dll
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.deps.json
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\bin\Debug\netstandard2.0\ref\MMSEApp.dll
@@ -66,3 +62,6 @@ C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\ref\MMSEApp.dll
 C:\Users\matth\OneDrive\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\MMSEApp.pdb
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\CorrectExam.xaml.g.cs
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\Patient\ReviewTestHomePage.xaml.g.cs
+C:\Users\Nova6\Documents\Source\Repos\2020-ca400-nolanm45-oharam29\src\MMSEApp\MMSEApp\MMSEApp\obj\Debug\netstandard2.0\Views\Patient\ReviewTestPage.xaml.g.cs
