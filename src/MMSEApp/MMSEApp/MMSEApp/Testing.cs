@@ -61,7 +61,7 @@ namespace MMSEApp
             MySqlCommand cmd1 = new MySqlCommand("INSERT INTO TBL_UNITTEST(insertTest) VALUES(insert)", con);
 
 
-            MySqlCommand cmd2 = new MySqlCommand("SELECT insertTest FROM TBL_UNITTEST", con); // sql query string
+            MySqlCommand cmd2 = new MySqlCommand("SELECT insertTest FROM TBL_UNITTEST", con);
 
             using (MySqlDataReader reader = cmd2.ExecuteReader())
             {
@@ -72,6 +72,28 @@ namespace MMSEApp
                     Console.WriteLine("TEST FAILED - Value not inserted");
                 }
                 else if (test_string == "")
+                {
+                    Console.WriteLine("TEST FAILED - Value not inserted");
+                }
+            }
+            Console.WriteLine("TEST PASSED - Value inserted successfully");
+
+        }
+        public void Test_Delete()
+        {
+            string cs = @"server=oharam29-nolanm45-mmse-app.c4zhfzwco8qq.eu-west-1.rds.amazonaws.com;Port=3306;database=patient_info;user id=oharam29;password=f1sfo9mu;Persist Security Info=True;charset=utf8;";
+            MySqlConnection con = new MySqlConnection(cs);
+            con.Open();
+            MySqlCommand cmd1 = new MySqlCommand("DELETE FROM TBL_UNITTEST(insertTest) VALUES(insert)", con);
+
+
+            MySqlCommand cmd2 = new MySqlCommand("SELECT insertTest FROM TBL_UNITTEST", con);
+
+            using (MySqlDataReader reader = cmd2.ExecuteReader())
+            {
+                reader.Read(); // read in query results
+                String test_string = reader.GetString(0);
+                if (test_string != "")
                 {
                     Console.WriteLine("TEST FAILED - Value not inserted");
                 }
