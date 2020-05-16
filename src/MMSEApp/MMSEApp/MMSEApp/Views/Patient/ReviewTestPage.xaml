@@ -7,9 +7,32 @@
              x:Class="MMSEApp.Views.Patient.ReviewTestPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Label Text="Exam Review"  
+                    HorizontalTextAlignment="Center"			
+			        TextColor="#127ac7"
+			        FontSize="30" 
+			        FontAttributes="Bold"  
+			        HorizontalOptions="CenterAndExpand"/>
+
+                <Label x:Name="date"  
+                    HorizontalTextAlignment="Center"			
+			        TextColor="#127ac7"
+			        FontSize="30" 
+			        FontAttributes="Bold"  
+			        HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <Label x:Name="SectionTitle" HorizontalOptions="Center"/>
+            <Grid >
+                <Label Grid.Column="0" Text="Question" FontAttributes="Bold" TextColor="#127ac7" />
+
+                <Label Grid.Column="1" Text="Patient Answer" FontAttributes="Bold" TextColor="#127ac7"/>
+            </Grid>
+            <Grid x:Name="QuestionsGrid" Padding="20">
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

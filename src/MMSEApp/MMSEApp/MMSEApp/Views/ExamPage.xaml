@@ -9,12 +9,12 @@
 
 
         <StackLayout x:Name="ExamContent">
-           
-            
- 
 
-            <Label x:Name="SectionTitle" HorizontalOptions="Center"/> 
- 
+
+
+
+            <Label x:Name="SectionTitle" HorizontalOptions="Center"/>
+            
             <Grid x:Name="QuestionsGrid" Padding="20">
                 
             </Grid>
