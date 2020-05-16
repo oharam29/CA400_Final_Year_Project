@@ -2,7 +2,7 @@
 The video walk through is [here](FIX-ME).
 -->
 
-https://drive.google.com/open?id=1N1EjbfidL9PsQk1TUYU5UI6NtSRk_4ZT
+https://drive.google.com/file/d/1N1EjbfidL9PsQk1TUYU5UI6NtSRk_4ZT/view?usp=sharing
 
 Instructions:
 
