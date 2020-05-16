@@ -2,6 +2,8 @@
 The video walk through is [here](FIX-ME).
 -->
 
+https://drive.google.com/open?id=1N1EjbfidL9PsQk1TUYU5UI6NtSRk_4ZT
+
 Instructions:
 
 1. Upload your video walk through to Google Drive.
