@@ -353,10 +353,18 @@ namespace MMSEApp.ViewModels
                     res.msg = "User added successfully";
                     res.success = true;
 
-                    MySqlCommand command = new MySqlCommand("UPDATE TBL_PATIENT SET LastTestDate = @now WHERE PatientID = @PID" ,con);
-                    DateTime now = DateTime.Now;
-                    var s = now.ToString("yyyy-MM-dd HH:mm:ss"); // not updatine lasttestdate due to format
-                    cmd.Parameters.AddWithValue("@now", s);
+                    MySqlCommand command = new MySqlCommand("UPDATE TBL_PATIENT SET LastTestDate = @now WHERE PatientID = @PID", con);
+ 
+                    MySqlCommand command2 = new MySqlCommand("SELECT DateTaken FROM TBL_RESULTS ORDER BY DateTaken LIMIT 1", con);
+                    using (MySqlDataReader reader = command2.ExecuteReader())
+                    {
+                        while (reader.Read()) // read in query results
+                        {
+                            cmd.Parameters.AddWithValue("@now", reader.GetDateTime(0));
+                        };
+                    }
+  
+                    
                     cmd.Parameters.AddWithValue("@PID", PatientItem.PatientID);
                     command.ExecuteNonQuery();
 

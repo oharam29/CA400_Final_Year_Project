@@ -15,8 +15,11 @@
 			        HorizontalOptions="CenterAndExpand"/>
 
 
-
-            <Label x:Name="SectionTitle" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label x:Name="SectionTitle" HorizontalOptions="Center"/>
+                <Label x:Name="Score" Text="{Binding ExamScore, StringFormat='Current Score = {0}' }"/>
+            </StackLayout>
+            
             
             <Grid x:Name="QuestionsGrid" Padding="20">
 

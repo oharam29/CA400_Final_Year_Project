@@ -19,6 +19,7 @@ namespace MMSEApp.Views
         {
             examViewModel = examView;
             InitializeComponent();
+            Score.BindingContext = examView;
             startCorrect();
         }
 
@@ -207,6 +208,24 @@ namespace MMSEApp.Views
 
             // next button
             var nextButton = new Button { Text = "Save Results" };
+            nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
+            nextButton.Clicked += new EventHandler(DrawingResult);
+            QuestionsGrid.Children.Add(nextButton, 1, 5);
+        }
+
+        private void DrawingResult(object sender, EventArgs e)
+        {
+            ClearGrid();
+            SectionTitle.Text = "Drawing";
+            AddQuestionEntry(0, 0, 1, 0, "Was the Drawing Correct?", examViewModel.DrawingAns1);
+
+            var backButton = new Button { Text = "Back" };
+            backButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
+            backButton.Clicked += new EventHandler(LanguageQuestions);
+            QuestionsGrid.Children.Add(backButton, 0, 5);
+
+            // next button
+            var nextButton = new Button { Text = "Next" };
             nextButton.Style = Application.Current.Resources["blueButtonStyle"] as Style;
             nextButton.Clicked += new EventHandler(SaveResults);
             QuestionsGrid.Children.Add(nextButton, 1, 5);
