@@ -1,5 +1,7 @@
 https://drive.google.com/open?id=1wsyH1FsBXlsfsHAteDCKoyfZuYCCAxEg
 
-This is a link to the Google Drive Containing the application apk
+This is a link to the Google Drive Containing the application apk, 
+
+if downloading apk from gitlab remove .zip which i splaced after .apk
 
 if link does not work, clone repo using visual studio, open MMSEApp.sln, build using uwp, this will run the application on windows pc
