@@ -308,6 +308,7 @@ namespace MMSEApp.ViewModels
                         ", @OriAns7, @OriAns8, @OriAns9, @OriAns10, @RegAns1, @RegAns2, @RegAns3, @AttenAns1, @RecAns1, " +
                         "@RecAns2, @RecAns3, @LangAns1, @LangAns2, @LangAns3, @LangAns4, @LangAns5, @DrawAns1 )", con); // sql query string
 
+                    DrawingAns1 = "Test Draw";
                     // add parameters
                     cmd.Parameters.AddWithValue("@DocID", App.currentDoctor.DoctorId);
                     cmd.Parameters.AddWithValue("@PatientID", PatientItem.PatientID);

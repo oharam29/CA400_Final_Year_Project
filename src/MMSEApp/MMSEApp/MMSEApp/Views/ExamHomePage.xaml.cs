@@ -22,9 +22,17 @@ namespace MMSEApp.Views
             InitSearch();
         }
 
-        async void StartExamButtonClicked(object sender, EventArgs e)
+        private void StartExamButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExamPage(PatientSelected));
+            if(PatientSelected!= null)
+            {
+                 Navigation.PushAsync(new ExamPage(PatientSelected));
+            }
+            else
+            {
+                App.Current.MainPage.DisplayAlert("You must select a patient", "", "OK");
+            }
+            
         }
 
         private List<PatientItem> GetPatients()

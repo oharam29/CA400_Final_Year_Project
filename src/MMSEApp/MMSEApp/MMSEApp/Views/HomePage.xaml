@@ -7,8 +7,8 @@
              mc:Ignorable="d"
              x:Class="MMSEApp.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            
+        <StackLayout HorizontalOptions="Center">
+
             <!--Style for buttons on this page-->
             <StackLayout.Resources>
                 <Style TargetType="Button">
@@ -22,9 +22,17 @@
                     <Setter Property="HeightRequest" Value="160" />
                 </Style>
             </StackLayout.Resources>
-
-            <StackLayout x:Name="DocInfo" BindingContext="currentDoc">
-                <Label x:Name="DocName"/>    
+            
+            <Label HorizontalTextAlignment="Center"			
+            Text="Mini-Mental State Examination"
+			TextColor="#127ac7"
+			FontSize="30" 
+			FontAttributes="Bold"/>
+            
+            
+            <StackLayout HorizontalOptions="Center" Margin="15" x:Name="DocInfo" BindingContext="currentDoc" Orientation="Horizontal">
+                <Label Text="Welcome " FontSize="20" />
+                <Label x:Name="DocName" FontSize="20" />    
             </StackLayout>
             
 

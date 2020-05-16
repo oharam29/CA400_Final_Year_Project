@@ -20,7 +20,9 @@ namespace MMSEApp.Views.Patient
         public ReviewTestHomePage(PatientItem patientItem )
         {
             currentPatient = patientItem;
+            
             InitializeComponent();
+            title.Text = "Exam Review: " + currentPatient.FirstName + " " + currentPatient.LastName;
             testResults = getResults();
             ReviewTestList.ItemsSource = testResults;
         }
@@ -91,9 +93,9 @@ namespace MMSEApp.Views.Patient
             return testResults;
         }
 
-        private void ReviewTestList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void ReviewTestList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            await Navigation.PushAsync(new ReviewTestPage(e.SelectedItem as TestResults));
         }
 
         async void Back_Clicked(object sender, EventArgs e)
